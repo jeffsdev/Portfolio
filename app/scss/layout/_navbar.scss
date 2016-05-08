@@ -1,6 +1,6 @@
 nav {
-  background: black;
-  color: white;
+  background: $black;
+  color: $white;
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@ nav {
     text-align: center;
     line-height: 50px;
     &:hover {
-      background: #444;
+      background: $gray;
     }
   }
 }
