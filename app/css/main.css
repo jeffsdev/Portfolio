@@ -62,3 +62,26 @@ img {
   max-width: 100%;
   height: auto;
   border: 0; }
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/PortfolioBGtestpic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -180px; }
+
+nav {
+  background: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between; }
+  nav a {
+    display: inline-block;
+    height: 50px;
+    width: 32%;
+    text-align: center;
+    line-height: 50px; }
+    nav a:hover {
+      background: #444; }

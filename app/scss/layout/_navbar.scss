@@ -1,0 +1,17 @@
+nav {
+  background: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  a {
+    display: inline-block;
+    height: 50px;
+    width: 32%;
+    text-align: center;
+    line-height: 50px;
+    &:hover {
+      background: #444;
+    }
+  }
+}
