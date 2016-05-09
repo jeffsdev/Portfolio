@@ -15,8 +15,29 @@
 
 .work-section {
   width: 100%;
-  height: 500px;
   background: $black;
   color: $white;
   text-align: center;
+  padding-bottom: 100px;
+  h2 {
+    margin-bottom: 1em;
+  }
+}
+
+
+.portfolio-item {
+  width: 75%;
+  background: #ccc;
+  margin: auto;
+  margin-bottom: 25px;
+  .p-img {
+    height: 200px;
+    width: 100%;
+    background: $gray;
+  }
+  .portfolio-item-details {
+    width: 100%;
+    background: $lightGray;
+    padding: 1em;
+  }
 }
