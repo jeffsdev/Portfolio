@@ -1,6 +1,6 @@
 .about-section {
   padding: 50px;
-  background: #404248;
+  background: $grayBlue;
   color: $white;
   h2 {
     text-align: center;
@@ -28,6 +28,22 @@
     }
     li:first-child {
       font-weight: bold;
+    }
+  }
+}
+
+
+.about-slant {
+  .slant {
+
+    height: 110px;
+    width: 100%;
+
+    // transform: rotateX(180deg);
+    polygon {
+      fill: $grayBlue;
+      border: none;
+      stroke-width: 0;
     }
   }
 }

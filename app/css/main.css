@@ -168,3 +168,18 @@ nav {
       margin-bottom: 1em; }
     .about-section .skills li:first-child {
       font-weight: bold; }
+
+.about-slant .slant {
+  height: 110px;
+  width: 100%; }
+  .about-slant .slant polygon {
+    fill: #404248;
+    border: none;
+    stroke-width: 0; }
+
+.contact {
+  color: #fff;
+  padding-bottom: 200px;
+  text-align: center; }
+  .contact h2 {
+    margin-bottom: 1em; }
