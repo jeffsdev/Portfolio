@@ -78,7 +78,8 @@ header {
   background-image: url("../img/PortfolioBGtestpic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -180px; }
+  background-position: -180px;
+  background-attachment: fixed; }
   header .header-box {
     width: 200px;
     background: rgba(0, 0, 0, 0.5);
@@ -107,3 +108,21 @@ nav {
     line-height: 50px; }
     nav a:hover {
       background: #444; }
+
+.header-slant .slant {
+  margin-bottom: -5px;
+  height: 110px;
+  width: 100%;
+  margin-top: -150px;
+  transform: rotateX(180deg); }
+  .header-slant .slant polygon {
+    fill: #000;
+    border: none;
+    stroke-width: 0; }
+
+.work-section {
+  width: 100%;
+  height: 500px;
+  background: #000;
+  color: #fff;
+  text-align: center; }
