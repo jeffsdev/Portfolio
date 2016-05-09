@@ -144,12 +144,23 @@ nav {
     padding: 1em; }
 
 .about-section {
-  padding: 50px;
+  padding: 50px 25px;
   background: #404248;
   color: #fff; }
   .about-section h2 {
     text-align: center;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    position: relative; }
+    .about-section h2:after {
+      content: "";
+      position: absolute;
+      top: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 10px;
+      width: 100px;
+      /* or 100px */
+      border-bottom: 3px solid teal; }
   .about-section .avatar {
     width: 200px;
     height: 200px;
@@ -160,14 +171,24 @@ nav {
   .about-section .about-me {
     color: #fff;
     margin-bottom: 1em; }
-  .about-section .skills {
-    text-align: center; }
-    .about-section .skills h3 {
+    .about-section .about-me p {
       margin-bottom: 1em; }
+  .about-section .skills {
+    display: flex;
+    flex-wrap: wrap; }
+    .about-section .skills img {
+      width: 36px;
+      height: 36px; }
+    .about-section .skills h3 {
+      width: 100%;
+      margin-bottom: 1em;
+      text-align: center; }
     .about-section .skills ul {
+      flex: 1 30%;
       margin-bottom: 1em; }
     .about-section .skills li:first-child {
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 1em; }
 
 .about-slant .slant {
   height: 110px;

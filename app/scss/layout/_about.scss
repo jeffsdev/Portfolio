@@ -1,10 +1,21 @@
 .about-section {
-  padding: 50px;
+  padding: 50px 25px;
   background: $grayBlue;
   color: $white;
   h2 {
     text-align: center;
     margin-bottom: 1em;
+    position: relative;
+    &:after {
+      content : "";
+      position: absolute;
+      top: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      height  : 10px;
+      width   : 100px;  /* or 100px */
+      border-bottom: 3px solid teal;
+    }
   }
   .avatar {
     width: 200px;
@@ -17,17 +28,31 @@
   .about-me {
     color: $white;
     margin-bottom: 1em;
-  }
-  .skills {
-    text-align: center;
-    h3 {
+    p {
       margin-bottom: 1em;
     }
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    // border: 1px solid blue;
+    img {
+      width: 36px;
+      height: 36px;
+    }
+    h3 {
+      width: 100%;
+      margin-bottom: 1em;
+      text-align: center;
+    }
     ul {
+      // border: 1px solid red;
+      flex: 1 30%;
       margin-bottom: 1em;
     }
     li:first-child {
       font-weight: bold;
+      margin-bottom: 1em;
     }
   }
 }
@@ -35,10 +60,8 @@
 
 .about-slant {
   .slant {
-
     height: 110px;
     width: 100%;
-
     // transform: rotateX(180deg);
     polygon {
       fill: $grayBlue;
