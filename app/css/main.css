@@ -102,6 +102,64 @@ header {
 main {
   background: #000; }
 
+.loader {
+  display: flex;
+  width: 100px;
+  padding: 20px;
+  margin: 0 auto;
+  float: left; }
+
+.left {
+  transform: rotate(-55deg); }
+
+.right {
+  transform: rotate(55deg); }
+
+.block {
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  border-radius: 50%;
+  background: #000;
+  animation: pulse 5s infinite; }
+  .block:first-child, .block:last-child {
+    animation-delay: 250ms; }
+  .block:nth-child(2), .block:nth-child(13) {
+    margin-top: 5px;
+    animation-delay: 500ms; }
+  .block:nth-child(3), .block:nth-child(12) {
+    margin-top: 10px;
+    animation-delay: 750ms; }
+  .block:nth-child(4), .block:nth-child(11) {
+    margin-top: 15px;
+    animation-delay: 1s; }
+  .block:nth-child(5), .block:nth-child(10) {
+    margin-top: 20px;
+    animation-delay: 1.25s; }
+  .block:nth-child(6), .block:nth-child(9) {
+    margin-top: 25px;
+    animation-delay: 1.5s; }
+  .block:nth-child(7), .block:nth-child(8) {
+    margin-top: 30px;
+    animation-delay: 1.75s; }
+
+@keyframes pulse {
+  50% {
+    background: #bcf;
+    box-shadow: 0 0 30px #aaf; }
+  100% {
+    background: #000; } }
+
+@keyframes float {
+  88% {
+    margin-top: 0px; }
+  91% {
+    margin-top: 20px; }
+  94% {
+    margin-top: 0px; }
+  97% {
+    margin-top: 20px; } }
+
 nav {
   background: rgba(0, 0, 0, 0.75);
   color: #fff;
