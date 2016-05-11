@@ -79,7 +79,7 @@ img {
   width: 50px;
   padding: 10px;
   animation: float 5s 3;
-  z-index: 99999999999; }
+  z-index: 1; }
 
 .block {
   width: 10px;
@@ -122,7 +122,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -180px;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  z-index: -1; }
   @media screen and (min-height: 640px) {
     header {
       height: 640px; } }
@@ -136,6 +137,8 @@ header {
     header {
       height: 768px; } }
   header .header-box {
+    position: fixed;
+    right: 0;
     width: 150px;
     background: rgba(0, 0, 0, 0.5);
     color: #aaa;
@@ -164,7 +167,6 @@ main {
 
 .navbar {
   position: fixed;
-  margin-top: -50px;
   width: 100%;
   background: rgba(0, 0, 0, 0.75);
   color: #fff;
@@ -197,8 +199,7 @@ main {
     stroke-width: 0; }
 
 .work-section {
-  z-index: 9999999999999999999999;
-  padding-top: 100px;
+  padding-top: 75px;
   width: 100%;
   background: #111;
   color: #fff;
@@ -245,8 +246,10 @@ main {
       /* or 100px */
       border-bottom: 3px solid teal; }
   .about-section .avatar {
+    display: block;
     width: 200px;
     height: 200px;
+    margin: auto;
     border-radius: 50%;
     background: #aaa;
     margin: auto;

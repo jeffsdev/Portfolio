@@ -8,6 +8,7 @@ header {
   background-repeat: no-repeat;
   background-position: -180px;
   background-attachment: fixed;
+  z-index: -1;
   //breakpoints at 568, 640, 667, 768, 900, 1024, 1280, 1366, 1440, 1600,
   @media screen and #{$s-mobile} {
     height: 640px;
@@ -28,6 +29,8 @@ header {
 
 
   .header-box {
+    position: fixed;
+    right: 0;
     width: 150px;
     background: rgba(0, 0, 0, 0.5);
     color: $lightGray;
