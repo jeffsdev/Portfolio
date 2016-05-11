@@ -14,8 +14,10 @@
 }
 
 .work-section {
+  padding-top: 100px;
   width: 100%;
   background: $black;
+  // background: linear-gradient(to bottom, #111111 0%,#404248 100%);
   color: $white;
   text-align: center;
   padding-bottom: 100px;
@@ -27,7 +29,7 @@
 
 .portfolio-item {
   width: 75%;
-  background: #ccc;
+  background: $black;
   margin: auto;
   margin-bottom: 25px;
   .p-img {
@@ -36,8 +38,16 @@
     background: $gray;
   }
   .portfolio-item-details {
+    margin-top: 5px;
     width: 100%;
-    background: $lightGray;
+    background: black;
     padding: 1em;
+    p {
+      margin: 1em;
+      font-size: 0.75em;
+    }
+    a {
+      color: $lightBlue;
+    }
   }
 }

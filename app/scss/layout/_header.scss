@@ -1,11 +1,31 @@
 header {
+  position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 568px;
   background-image: url('../img/PortfolioBGtestpic.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -180px;
   background-attachment: fixed;
+  //breakpoints at 568, 640, 667, 768, 900, 1024, 1280, 1366, 1440, 1600,
+  @media screen and #{$s-mobile} {
+    height: 640px;
+  }
+  @media screen and #{$m-mobile} {
+    height: 667px;
+  }
+  @media screen and #{$l-mobile} {
+    height: 720px;
+  }
+  @media screen and #{$l-mobile} {
+    height: 768px;
+  }
+
+
+
+
+
+
   .header-box {
     width: 150px;
     background: rgba(0, 0, 0, 0.5);

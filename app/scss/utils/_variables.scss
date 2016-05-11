@@ -1,9 +1,18 @@
 // Colors
-$black: #000;
+$black: #111;
 $white: #fff;
 
 $lightGray: #aaa;
 $gray: #444;
 $grayBlue: #404248;
 
-$lightBlue: #3287ef;
+$lightBlue: #bcf;
+
+
+
+//Media Queries
+$s-mobile: "(min-height: 640px)";
+$m-mobile: "(min-height: 667px)";
+$l-mobile: "(min-height: 720px)";
+$tablet: "(min-height: 768px)";
+$desktop: "(min-height: 1024px)";
