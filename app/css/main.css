@@ -8,7 +8,8 @@ html {
 
 body {
   margin: 0;
-  font: 16px/1 sans-serif;
+  font: 16px/1 "Roboto", sans-serif;
+  font-weight: 100;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
@@ -114,6 +115,7 @@ img {
 
 header {
   position: relative;
+  padding-top: 50px;
   width: 100vw;
   height: 568px;
   background-image: url("../img/PortfolioBGtestpic.jpg");
@@ -137,8 +139,8 @@ header {
     width: 150px;
     background: rgba(0, 0, 0, 0.5);
     color: #aaa;
-    margin-left: auto;
     padding: 3%;
+    margin-left: auto;
     text-align: center; }
     header .header-box .divider-blue {
       display: block;
@@ -146,6 +148,8 @@ header {
       width: 50px;
       height: 3px;
       background: #bcf; }
+    header .header-box h2, header .header-box h3, header .header-box h4 {
+      font-weight: 300; }
     header .header-box h2 {
       font-size: 1.5em;
       margin-top: 8px; }
@@ -158,20 +162,28 @@ header {
 main {
   background: #111; }
 
-nav {
+.navbar {
+  position: fixed;
+  margin-top: -50px;
+  width: 100%;
   background: rgba(0, 0, 0, 0.75);
   color: #fff;
   height: 50px;
   display: flex;
-  justify-content: space-between; }
-  nav a {
+  justify-content: space-between;
+  z-index: 99999999; }
+  .navbar a {
     display: inline-block;
     height: 50px;
     width: 32%;
     text-align: center;
     line-height: 50px; }
-    nav a:hover {
-      background: #444; }
+    .navbar a:hover {
+      background: black; }
+
+.active {
+  transition: 0.5s;
+  box-shadow: inset 0 -8px 8px -6px #bcf; }
 
 .header-slant .slant {
   margin-bottom: -5px;
@@ -185,6 +197,7 @@ nav {
     stroke-width: 0; }
 
 .work-section {
+  z-index: 9999999999999999999999;
   padding-top: 100px;
   width: 100%;
   background: #111;
@@ -209,8 +222,7 @@ nav {
     background: black;
     padding: 1em; }
     .portfolio-item .portfolio-item-details p {
-      margin: 1em;
-      font-size: 0.75em; }
+      margin: 1em; }
     .portfolio-item .portfolio-item-details a {
       color: #bcf; }
 
@@ -271,7 +283,8 @@ nav {
 
 .contact {
   color: #fff;
-  padding-bottom: 200px;
-  text-align: center; }
+  text-align: center;
+  height: 100vh;
+  padding-top: 200px; }
   .contact h2 {
     margin-bottom: 1em; }

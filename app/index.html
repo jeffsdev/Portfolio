@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jeff Seymour | Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <!--build:css css/main.min.css-->
     <link rel="stylesheet" href="css/main.css">
     <!--endbuild-->
     <!--build:js js/main.min.js -->
     <script src="js/lib/jquery-2.2.3.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- endbuild -->
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="#">Work</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+    <span id="top"></span> <!--Anchorpoint-->
+    <header id="header">
+      <section id="top"></section>
+      <nav class="navbar">
+        <a href="#top">&lt; JS &gt;</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="header-box">
         <h1>Jeff Seymour</h1>
@@ -33,19 +38,20 @@
       </div>
     </header>
 
-    <main>
+    <main class="sections">
       <div class="header-slant">
         <svg class="slant" viewBox="0 0 1 1" preserveAspectRatio="none">
           <polygon points="0,0 0,1 1,0.5 1,0">
         </svg>
+        <span id="worka"></span> <!--Anchorpoint-->
       </div>
-      <section class="work-section">
+      <section id="work" class="work-section">
         <h2>Work</h2>
         <div class="portfolio-item">
           <img src="img/pintme.jpg" alt="pint me webapp"> <!--REPLACE WITH IMAGE-->
           <div class="portfolio-item-details">
             <h3>Pint Me!</h3>
-            <p>An Angular 2 web app that displays kegs and their remaining pints.</p>
+            <p>An Angular 2 web app that dynamically displays kegs and their remaining pints.</p>
             <p>Angular 2, TypeScript, SCSS, HTML5</p>
             <a href="https://github.com/jeffsdev/js-Angular2-TapRoom">View on GitHub</a>
           </div>
@@ -66,7 +72,8 @@
         </div>
       </section>
 
-      <section class="about-section">
+      <span id="about"></span> <!--Anchorpoint-->
+      <section id="about" class="about-section">
         <h2>About</h2>
         <div class="avatar"></div>
         <div class="about-me">
@@ -125,7 +132,8 @@
           <polygon points="0,0 0,1 1,0.5 1,0">
         </svg>
       </div>
-      <section class="contact">
+      <section id="contact" class="contact">
+        <span id="contacta"></span> <!--Anchorpoint-->
         <h2>Contact</h2>
         <p>Get in touch with me!</p>
         <p>seym1585@gmail.com</p>

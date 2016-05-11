@@ -1,9 +1,13 @@
-nav {
+.navbar {
+  position: fixed;
+  margin-top: -50px;
+  width: 100%;
   background: rgba(0, 0, 0, 0.75);
   color: $white;
   height: 50px;
   display: flex;
   justify-content: space-between;
+  z-index: 99999999;
   a {
     display: inline-block;
     height: 50px;
@@ -11,7 +15,11 @@ nav {
     text-align: center;
     line-height: 50px;
     &:hover {
-      background: $gray;
+      background: black;
     }
   }
+}
+.active {
+  transition: 0.5s;
+  box-shadow: inset 0 -8px 8px -6px $lightBlue;
 }
