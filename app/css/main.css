@@ -113,6 +113,22 @@ img {
   97% {
     padding-top: 10px; } }
 
+.social-icons a:last-child img {
+  animation-delay: 750ms; }
+
+.social-icons img {
+  animation: bounce 5s infinite; }
+
+@keyframes bounce {
+  85% {
+    transform: rotate(0deg); }
+  88% {
+    transform: rotate(-15deg); }
+  94% {
+    transform: rotate(15deg); }
+  97% {
+    transform: rotate(0deg); } }
+
 header {
   position: relative;
   padding-top: 50px;
@@ -139,7 +155,7 @@ header {
   header .header-box {
     position: fixed;
     right: 0;
-    width: 150px;
+    width: 155px;
     background: rgba(0, 0, 0, 0.5);
     color: #aaa;
     padding: 3%;
@@ -151,6 +167,8 @@ header {
       width: 50px;
       height: 3px;
       background: #bcf; }
+    header .header-box h1 {
+      font-weight: 400; }
     header .header-box h2, header .header-box h3, header .header-box h4 {
       font-weight: 300; }
     header .header-box h2 {
@@ -160,7 +178,7 @@ header {
       font-size: 1em;
       margin-bottom: 8px; }
     header .header-box h4 {
-      font-size: 0.75em; }
+      font-size: 1em; }
 
 main {
   background: #111; }
@@ -291,3 +309,11 @@ main {
   padding-top: 200px; }
   .contact h2 {
     margin-bottom: 1em; }
+
+.social-icons {
+  margin: 50px auto; }
+  .social-icons a {
+    display: inline-block;
+    margin: 0 15px; }
+  .social-icons img {
+    width: 40px; }

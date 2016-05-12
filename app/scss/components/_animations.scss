@@ -47,3 +47,21 @@ $glow-color: #aaf;
   94% {padding-top: 15px;}
   97% {padding-top: 10px;}
 }
+
+
+//Contact section Social Icons
+.social-icons {
+  a:last-child img {
+    animation-delay: 750ms;
+  }
+  img {
+    animation: bounce 5s infinite;
+  }
+}
+
+@keyframes bounce {
+  85% {transform: rotate(0deg);}
+  88% {transform: rotate(-15deg);}
+  94% {transform: rotate(15deg);}
+  97% {transform: rotate(0deg);}
+}
