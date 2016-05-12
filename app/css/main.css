@@ -29,6 +29,9 @@ main,
 li {
   display: block; }
 
+h1, h2, h3, h4 {
+  font-weight: 500; }
+
 h1 {
   font-size: 32px; }
 
@@ -72,7 +75,7 @@ img {
 
 .loader {
   position: absolute;
-  bottom: 10px;
+  top: -75px;
   left: 25px;
   display: flex;
   height: 50px;
@@ -217,6 +220,7 @@ main {
     stroke-width: 0; }
 
 .work-section {
+  position: relative;
   padding-top: 75px;
   width: 100%;
   background: #111;
@@ -314,6 +318,7 @@ main {
   margin: 50px auto; }
   .social-icons a {
     display: inline-block;
-    margin: 0 15px; }
+    margin: 0 15px;
+    padding: 5px; }
   .social-icons img {
     width: 40px; }
