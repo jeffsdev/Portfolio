@@ -23,7 +23,12 @@ header {
     height: 768px;
   }
 
-
+  // @media screen and(min-width: 768px) {
+  //   background-position: -140px;
+  // }
+  @media screen and(min-width: 1024px) {
+    background-position: -100px;
+  }
 
 
 
@@ -37,6 +42,7 @@ header {
     padding: 3%;
     margin-left: auto;
     text-align: center;
+    transition: 1s;
     .divider-blue {
       display: block;
       margin: 8px auto;
@@ -60,6 +66,17 @@ header {
     }
     h4 {
       font-size: 1em;
+    }
+    @media screen and(min-width: 400px) {
+      width: 200px;
+      right: initial;
+      left: 50%;
+      transform: translate(-20%);
+    }
+    @media screen and(min-width: 768px) {
+      width: 350px;
+      left: 50%;
+      transform: translate(-50%);
     }
   }
 }

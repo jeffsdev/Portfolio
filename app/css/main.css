@@ -1,3 +1,14 @@
+.hborder, .work-section h4:after, .about-section h2:after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10px;
+  width: 100px;
+  /* or 100px */
+  border-bottom: 3px solid teal; }
+
 html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
@@ -28,9 +39,6 @@ ul {
 main,
 li {
   display: block; }
-
-h1, h2, h3, h4 {
-  font-weight: 500; }
 
 h1 {
   font-size: 32px; }
@@ -155,6 +163,9 @@ header {
   @media screen and (min-height: 720px) {
     header {
       height: 768px; } }
+  @media screen and (min-width: 1024px) {
+    header {
+      background-position: -100px; } }
   header .header-box {
     position: fixed;
     right: 0;
@@ -163,7 +174,8 @@ header {
     color: #aaa;
     padding: 3%;
     margin-left: auto;
-    text-align: center; }
+    text-align: center;
+    transition: 1s; }
     header .header-box .divider-blue {
       display: block;
       margin: 8px auto;
@@ -182,6 +194,17 @@ header {
       margin-bottom: 8px; }
     header .header-box h4 {
       font-size: 1em; }
+    @media screen and (min-width: 400px) {
+      header .header-box {
+        width: 200px;
+        right: initial;
+        left: 50%;
+        transform: translate(-20%); } }
+    @media screen and (min-width: 768px) {
+      header .header-box {
+        width: 350px;
+        left: 50%;
+        transform: translate(-50%); } }
 
 main {
   background: #111; }
@@ -189,7 +212,7 @@ main {
 .navbar {
   position: fixed;
   width: 100%;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.9);
   color: #fff;
   height: 50px;
   display: flex;
@@ -228,7 +251,11 @@ main {
   text-align: center;
   padding-bottom: 100px; }
   .work-section h2 {
-    margin-bottom: 1em; }
+    margin-bottom: 8px; }
+  .work-section h4 {
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 2em; }
 
 .portfolio-item {
   width: 75%;
@@ -256,51 +283,62 @@ main {
   .about-section h2 {
     text-align: center;
     margin-bottom: 1em;
-    position: relative; }
-    .about-section h2:after {
-      content: "";
-      position: absolute;
-      top: 28px;
-      left: 50%;
-      transform: translateX(-50%);
-      height: 10px;
-      width: 100px;
-      /* or 100px */
-      border-bottom: 3px solid teal; }
+    position: relative;
+    font-weight: 300; }
   .about-section .avatar {
     display: block;
     width: 200px;
     height: 200px;
-    margin: auto;
     border-radius: 50%;
     background: #aaa;
-    margin: auto;
-    margin-bottom: 1em; }
+    margin: 0 auto 1em auto; }
   .about-section .about-me {
     color: #fff;
-    margin-bottom: 1em; }
+    max-width: 600px;
+    margin: 0 auto 2em auto;
+    overflow: auto; }
+    .about-section .about-me h4 {
+      margin-bottom: 1em;
+      font-weight: 300;
+      color: #bcf; }
     .about-section .about-me p {
       margin-bottom: 1em; }
+    .about-section .about-me a {
+      display: inline-block;
+      float: right;
+      border: 1px solid lime;
+      padding: 15px 20px;
+      border-radius: 2px; }
   .about-section .skills {
     display: flex;
     flex-wrap: wrap; }
-    .about-section .skills img {
-      width: 36px;
-      height: 36px; }
     .about-section .skills h3 {
       width: 100%;
       margin-bottom: 1em;
-      text-align: center; }
+      text-align: center;
+      font-weight: 300;
+      color: #bcf; }
     .about-section .skills ul {
       flex: 1 30%;
       margin-bottom: 1em; }
     .about-section .skills li:first-child {
       font-weight: bold;
       margin-bottom: 1em; }
+  @media screen and (min-width: 768px) {
+    .about-section .about-top {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      min-width: 718px;
+      margin: 50px auto; }
+    .about-section .about-me {
+      margin: 0 auto 0 50px; } }
 
 .about-slant .slant {
   height: 110px;
-  width: 100%; }
+  width: 100%;
+  margin-top: -5px; }
   .about-slant .slant polygon {
     fill: #404248;
     border: none;

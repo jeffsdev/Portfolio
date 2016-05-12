@@ -11,9 +11,30 @@ $lightBlue: #bcf;
 //Font Stacks
 $robotoStack: 'Roboto', sans-serif;
 
+//////////////////
+
+//Bottom borders under some h tags
+.hborder {
+  content : "";
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  height  : 10px;
+  width   : 100px;  /* or 100px */
+  border-bottom: 3px solid teal;
+}
+
+
+/////////////////////////////////
+
+
 //Media Queries
+//Heights
 $s-mobile: "(min-height: 640px)";
 $m-mobile: "(min-height: 667px)";
 $l-mobile: "(min-height: 720px)";
 $tablet: "(min-height: 768px)";
 $desktop: "(min-height: 1024px)";
+
+//Widths

@@ -24,7 +24,15 @@
   text-align: center;
   padding-bottom: 100px;
   h2 {
-    margin-bottom: 1em;
+    margin-bottom: 8px;
+  }
+  h4 {
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 2em;
+    &:after {
+      @extend .hborder;
+    }
   }
 }
 
