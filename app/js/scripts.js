@@ -25,7 +25,13 @@
 // });
 
 
-
+// Fix for funky fixed background 100%vh viewport size re-sizing jumpy bug on mobile browsers
+$( document ).ready(function() {
+  if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    var h = $('.height-fix').height();
+    $('.height-fix').height(h);
+  }
+});
 
 
 
