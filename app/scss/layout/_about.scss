@@ -43,6 +43,8 @@
   .skills {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
     // border: 1px solid blue;
     h3 {
       width: 100%;
@@ -53,7 +55,7 @@
     }
     ul {
       // border: 1px solid red;
-      flex: 1 30%;
+      flex: 1 10%;
       margin-bottom: 1em;
     }
     li:first-child {

@@ -317,7 +317,9 @@ main {
       border-radius: 2px; }
   .about-section .skills {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto; }
     .about-section .skills h3 {
       width: 100%;
       margin-bottom: 1em;
@@ -325,7 +327,7 @@ main {
       font-weight: 300;
       color: #bcf; }
     .about-section .skills ul {
-      flex: 1 30%;
+      flex: 1 10%;
       margin-bottom: 1em; }
     .about-section .skills li:first-child {
       font-weight: bold;
