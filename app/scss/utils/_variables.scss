@@ -1,4 +1,5 @@
 // Colors
+$blackblack: #000;
 $black: #111;
 $white: #fff;
 
@@ -35,7 +36,8 @@ $xs-mobile: "(min-height: 500px)";
 $s-mobile: "(min-height: 640px)";
 $m-mobile: "(min-height: 667px)";
 $l-mobile: "(min-height: 720px)";
-$tablet: "(min-height: 768px)";
-$desktop: "(min-height: 1024px)";
+
 
 //Widths
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1024px)";
