@@ -16,7 +16,7 @@
 
 .work-section {
   position: relative;
-  padding: 30px 30px 100px 30px;
+  padding: 30px 30px 50px 30px;
   width: 100%;
   background: $black;
   // background: linear-gradient(to bottom, #111111 0%,#404248 100%);
@@ -29,7 +29,7 @@
   h4 {
     position: relative;
     font-weight: 300;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
     &:after {
       @extend .hborder;
     }
@@ -73,5 +73,7 @@
     display: flex;
     align-items: center;
     background: $blackblack;
+    max-width:  1400px;
+    border-right: 2px solid $lightBlue;
   }
 }
