@@ -8,6 +8,7 @@ $gray: #444;
 $grayBlue: #404248;
 
 $lightBlue: #bcf;
+$lightOrange: #D68843;
 
 //Font Stacks
 $robotoStack: 'Roboto', sans-serif;
@@ -23,7 +24,7 @@ $robotoStack: 'Roboto', sans-serif;
   transform: translateX(-50%);
   height  : 10px;
   width   : 100px;  /* or 100px */
-  border-bottom: 3px solid teal;
+  border-bottom: 3px solid $lightOrange;
 }
 
 
@@ -43,3 +44,4 @@ $s-phone: "(min-width: 400px)";
 $s-tablet: "(min-width: 590px)";
 $tablet: "(min-width: 768px)";
 $desktop: "(min-width: 1024px)";
+$l-desktop: "(min-width: 1400px)";

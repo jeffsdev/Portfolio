@@ -17,6 +17,9 @@
       background: black;
     }
   }
+  @media screen and #{$desktop} {
+    padding-left: 50%;
+  }
 }
 .active {
   transition: 0.5s;
