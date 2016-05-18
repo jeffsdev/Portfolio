@@ -146,7 +146,7 @@ header {
   width: 100%;
   height: 440px;
   background-color: #111;
-  background-image: url("../img/PortfolioBGpic2.jpg");
+  background-image: url("../img/PortfolioBGpic3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -180px;
@@ -400,6 +400,14 @@ main {
   padding-top: 200px; }
   .contact h2 {
     margin-bottom: 1em; }
+    @media screen and (min-width: 768px) {
+      .contact h2 {
+        font-size: 3em; } }
+  .contact p {
+    margin-bottom: 1em; }
+    @media screen and (min-width: 768px) {
+      .contact p {
+        font-size: 2em; } }
 
 .social-icons {
   margin: 50px auto; }

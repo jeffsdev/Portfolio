@@ -5,6 +5,15 @@
   padding-top: 200px;
   h2 {
     margin-bottom: 1em;
+    @media screen and #{$tablet} {
+      font-size: 3em;
+    }
+  }
+  p {
+    margin-bottom: 1em;
+    @media screen and #{$tablet} {
+      font-size: 2em;
+    }
   }
 }
 
