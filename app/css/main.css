@@ -20,9 +20,10 @@ html {
 body {
   margin: 0;
   font: 16px/1 "Roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  background: #111; }
 
 h1,
 h2,
@@ -209,7 +210,7 @@ header {
         width: 300px;
         transform: translate(-10%);
         right: initial;
-        left: 65%;
+        left: 75%;
         transform: translate(-50%); } }
     @media screen and (min-width: 1024px) {
       header .header-box {
@@ -294,7 +295,7 @@ main {
     .portfolio-item .portfolio-item-details p {
       margin: 1em; }
     .portfolio-item .portfolio-item-details img {
-      width: 25px; }
+      height: 25px; }
     .portfolio-item .portfolio-item-details a {
       display: inline-block;
       color: #bcf;
@@ -308,6 +309,17 @@ main {
       background: #000;
       max-width: 1400px;
       border-right: 2px solid #bcf; } }
+
+.comingsoon {
+  margin: 100px 0; }
+  .comingsoon h3, .comingsoon h4 {
+    margin: 1em 0; }
+  .comingsoon h4:after {
+    border: none; }
+  .comingsoon a {
+    color: lime; }
+    .comingsoon a:hover {
+      color: #99ff99; }
 
 .about-section {
   padding: 50px 25px;
@@ -394,20 +406,29 @@ main {
     stroke-width: 0; }
 
 .contact {
+  display: flex;
+  flex-wrap: wrap;
   color: #fff;
   text-align: center;
   height: 100vh;
   padding-top: 200px; }
   .contact h2 {
+    flex: 1 100%;
     margin-bottom: 1em; }
     @media screen and (min-width: 768px) {
       .contact h2 {
         font-size: 3em; } }
+  .contact div {
+    flex: 1 100%; }
   .contact p {
     margin-bottom: 1em; }
     @media screen and (min-width: 768px) {
       .contact p {
         font-size: 2em; } }
+  .contact p:last-child {
+    flex: 1 100%;
+    align-self: flex-end;
+    font-size: 1em; }
 
 .social-icons {
   margin: 50px auto; }

@@ -59,7 +59,7 @@
       margin: 1em;
     }
     img {
-      width: 25px;
+      height: 25px;
     }
     a {
       display: inline-block;
@@ -75,5 +75,21 @@
     background: $blackblack;
     max-width:  1400px;
     border-right: 2px solid $lightBlue;
+  }
+}
+
+.comingsoon {
+  margin: 100px 0;
+  h3, h4 {
+    margin: 1em 0;
+  }
+  h4:after {
+    border:none;
+  }
+  a {
+    color: lime;
+    &:hover {
+      color: lighten(lime, 30%);
+    }
   }
 }

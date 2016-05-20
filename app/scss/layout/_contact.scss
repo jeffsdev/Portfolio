@@ -1,19 +1,30 @@
 .contact {
+  display: flex;
+  flex-wrap: wrap;
   color: $white;
   text-align: center;
   height: 100vh;
   padding-top: 200px;
   h2 {
+    flex: 1 100%;
     margin-bottom: 1em;
     @media screen and #{$tablet} {
       font-size: 3em;
     }
+  }
+  div {
+    flex: 1 100%;
   }
   p {
     margin-bottom: 1em;
     @media screen and #{$tablet} {
       font-size: 2em;
     }
+  }
+  p:last-child {
+    flex: 1 100%;
+    align-self: flex-end;
+    font-size: 1em;
   }
 }
 

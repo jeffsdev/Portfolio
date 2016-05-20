@@ -11,9 +11,10 @@ html {
 body {
   margin: 0;
   font: 16px/1 $robotoStack;
-  font-weight: 100;
+  font-weight: 300;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background: $black;
 }
 
 h1,
