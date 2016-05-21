@@ -129,6 +129,9 @@ var sections = $('section')
 $(window).on('scroll', function () {
   var cur_pos = $(this).scrollTop();
 
+  var a_active = $('a[href="#about"]').hasClass("active");
+  var c_active = $('a[href="#contact"]').hasClass("active");
+
   sections.each(function() {
     var top = $(this).offset().top - nav_height,
         bottom = top + $(this).outerHeight();
@@ -139,6 +142,14 @@ $(window).on('scroll', function () {
 
       // $(this).addClass('active');
       nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+
+      // hide ".header-box" when viewing bottom of page.
+      if (a_active || c_active) {
+        $(".header-box").css("display", "none");
+        console.log("hi");
+      } else {
+        $(".header-box").css("display", "block");
+      }
     }
   });
 });
@@ -155,3 +166,11 @@ nav.find('a').on('click', function () {
 });
 
 })
+
+
+$(document).ready(function() {
+  if($('a[href="#top"]').hasClass("active")){
+    $(".header-box").css("background", "none");
+    console.log("hi");
+  }
+});
