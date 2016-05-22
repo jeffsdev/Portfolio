@@ -3,8 +3,9 @@
   flex-wrap: wrap;
   color: $white;
   text-align: center;
-  height: 100vh;
-  padding-top: 200px;
+  height: calc(100vh - 100px);
+  padding-top: 50px;
+  align-content: center;
   h2 {
     flex: 1 100%;
     margin-bottom: 1em;
@@ -21,11 +22,10 @@
       font-size: 2em;
     }
   }
-  p:last-child {
-    flex: 1 100%;
-    align-self: flex-end;
-    font-size: 1em;
-  }
+  // p:last-child {
+  //   flex: 1 100%;
+  //   font-size: 1em;
+  // }
 }
 
 .social-icons {
@@ -38,4 +38,11 @@
   img {
     width: 40px;
   }
+}
+
+footer {
+  height: 50px;
+  color: white;
+  text-align: center;
+  font-size: 0.8em;
 }

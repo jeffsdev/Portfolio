@@ -410,8 +410,9 @@ main {
   flex-wrap: wrap;
   color: #fff;
   text-align: center;
-  height: 100vh;
-  padding-top: 200px; }
+  height: calc(100vh - 100px);
+  padding-top: 50px;
+  align-content: center; }
   .contact h2 {
     flex: 1 100%;
     margin-bottom: 1em; }
@@ -425,10 +426,6 @@ main {
     @media screen and (min-width: 768px) {
       .contact p {
         font-size: 2em; } }
-  .contact p:last-child {
-    flex: 1 100%;
-    align-self: flex-end;
-    font-size: 1em; }
 
 .social-icons {
   margin: 50px auto; }
@@ -438,3 +435,9 @@ main {
     padding: 5px; }
   .social-icons img {
     width: 40px; }
+
+footer {
+  height: 50px;
+  color: white;
+  text-align: center;
+  font-size: 0.8em; }
