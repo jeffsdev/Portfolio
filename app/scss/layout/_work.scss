@@ -67,6 +67,12 @@
       border: 1px solid $lightBlue;
       padding: 10px;
       margin: 10px 10px;
+      &:hover {
+        background: $grayBlue;
+      }
+      &:active {
+        background: lighten($grayBlue, 20%);
+      }
     }
   }
   @media screen and #{$desktop} {

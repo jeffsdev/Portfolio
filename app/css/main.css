@@ -241,7 +241,9 @@ main {
     text-align: center;
     line-height: 50px; }
     .navbar a:hover {
-      background: black; }
+      background: #2b2b2b; }
+    .navbar a:active {
+      background: #444444; }
   @media screen and (min-width: 1024px) {
     .navbar {
       padding-left: 50%; } }
@@ -302,6 +304,10 @@ main {
       border: 1px solid #bcf;
       padding: 10px;
       margin: 10px 10px; }
+      .portfolio-item .portfolio-item-details a:hover {
+        background: #404248; }
+      .portfolio-item .portfolio-item-details a:active {
+        background: #70747e; }
   @media screen and (min-width: 1024px) {
     .portfolio-item {
       display: flex;
@@ -437,7 +443,7 @@ main {
     width: 40px; }
 
 footer {
-  height: 50px;
+  height: 51px;
   color: white;
   text-align: center;
   font-size: 0.8em; }
