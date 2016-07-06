@@ -59,6 +59,12 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/img'))
 });
 
+// Moving Other Resources
+gulp.task('resources', function() {
+  return gulp.src('app/resources/**/*.+(pdf)')
+    .pipe(gulp.dest('dist/resources'))
+});
+
 // Cleaning
 gulp.task('clean', function() {
   return del.sync('dist').then(function(cb) {
@@ -89,7 +95,7 @@ gulp.task('default', function(callback) {
 gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
-    ['sass', 'useref', 'images'],
+    ['sass', 'useref', 'images', 'resources'],
     callback
   )
 })

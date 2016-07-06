@@ -361,6 +361,8 @@ main {
       border: 1px solid lime;
       padding: 15px 20px;
       border-radius: 2px; }
+      .about-section .about-me a:hover {
+        border-color: #80ff80; }
   .about-section .skills {
     display: flex;
     flex-wrap: wrap;
