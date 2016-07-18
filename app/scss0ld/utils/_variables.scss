@@ -1,0 +1,47 @@
+// Colors
+$blackblack: #000;
+$black: #111;
+$white: #fff;
+
+$lightGray: #aaa;
+$gray: #444;
+$grayBlue: #404248;
+
+$lightBlue: #bcf;
+$lightOrange: #D68843;
+
+//Font Stacks
+$robotoStack: 'Roboto', sans-serif;
+
+//////////////////
+
+//Bottom borders under some h tags
+.hborder {
+  content : "";
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  height  : 10px;
+  width   : 100px;  /* or 100px */
+  border-bottom: 3px solid $lightOrange;
+}
+
+
+/////////////////////////////////
+
+
+//Media Queries
+//Heights
+$xs-mobile: "(min-height: 500px)";
+$s-mobile: "(min-height: 640px)";
+$m-mobile: "(min-height: 667px)";
+$l-mobile: "(min-height: 720px)";
+
+
+//Widths
+$s-phone: "(min-width: 400px)";
+$s-tablet: "(min-width: 590px)";
+$tablet: "(min-width: 768px)";
+$desktop: "(min-width: 1024px)";
+$l-desktop: "(min-width: 1400px)";

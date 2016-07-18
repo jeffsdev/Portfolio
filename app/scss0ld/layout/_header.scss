@@ -1,10 +1,6 @@
 header {
   position: relative;
-  // padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-top: 50px;
   width: 100%;
   height: 440px;
   background-color: $black;
@@ -13,7 +9,7 @@ header {
   background-repeat: no-repeat;
   background-position: -180px;
   background-attachment: fixed;
-  // z-index: -1;
+  z-index: -1;
   transition: 1s;
   //breakpoints at 568, 640, 667, 768, 900, 1024, 1280, 1366, 1440, 1600,
   @media screen and #{$xs-mobile} {
@@ -43,18 +39,19 @@ header {
 
 
   .header-box {
-    // position: fixed;
-    width: 100%;
-    // background: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    right: 0;
+    width: 155px;
+    background: rgba(0, 0, 0, 0.75);
     color: $lightGray;
     padding: 3%;
-
+    margin-left: auto;
     text-align: center;
     transition: 1s;
     .divider-blue {
       display: block;
       margin: 8px auto;
-      width: 200px;
+      width: 50px;
       height: 3px;
       background: $lightBlue;
       @media screen and #{$tablet} {
@@ -62,16 +59,17 @@ header {
       }
     }
     h1 {
-      font-weight: 700;
-
+      font-weight: 400;
       @media screen and #{$tablet} {
-        font-size: 6em;
+        font-size: 3.5em;
         text-align: center;
         margin: auto;
       }
     }
+    h2,h3,h4 {
+      font-weight: 300;
+    }
     h2 {
-      font-weight: 700;
       font-size: 1.5em;
       margin-top: 8px;
       @media screen and #{$tablet} {
@@ -80,7 +78,13 @@ header {
     }
     h3 {
       font-size: 1em;
-      font-weight: 100;
+      margin-bottom: 8px;
+      @media screen and #{$tablet} {
+        font-size: 2em;
+      }
+    }
+    h4 {
+      font-size: 1em;
       @media screen and #{$tablet} {
         font-size: 1.25em;
       }
@@ -96,23 +100,23 @@ header {
     //   left: 50%;
     //   transform: translate(-50%);
     // }
-    // @media screen and #{$tablet} {
-    //   width: 300px;
-    //   transform: translate(-10%);
-    //   right: initial;
-    //   left: 75%;
-    //   transform: translate(-50%);
-    // }
-    // @media screen and #{$desktop} {
-    //   width: 350px;
-    //
-    //   background: rgba(0, 0, 0, 0.75);
-    //   padding: 1% 1% 3% 1%;
-    // }
-    // @media screen and #{$l-desktop} {
-    //   left: 50%;
-    //   transform: translate(-50%);
-    // }
+    @media screen and #{$tablet} {
+      width: 300px;
+      transform: translate(-10%);
+      right: initial;
+      left: 75%;
+      transform: translate(-50%);
+    }
+    @media screen and #{$desktop} {
+      width: 350px;
+
+      background: rgba(0, 0, 0, 0.75);
+      padding: 1% 1% 3% 1%;
+    }
+    @media screen and #{$l-desktop} {
+      left: 50%;
+      transform: translate(-50%);
+    }
   }
 }
 

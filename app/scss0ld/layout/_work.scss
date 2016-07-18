@@ -1,35 +1,27 @@
-// .header-slant {
-//   .slant {
-//     margin-bottom: -5px;
-//     height: 110px;
-//     width: 100%;
-//     margin-top: -150px;
-//     transform: rotateX(180deg);
-//     polygon {
-//       fill: $black;
-//       border: none;
-//       stroke-width: 0;
-//     }
-//   }
-// }
+.header-slant {
+  .slant {
+    margin-bottom: -5px;
+    height: 110px;
+    width: 100%;
+    margin-top: -150px;
+    transform: rotateX(180deg);
+    polygon {
+      fill: $black;
+      border: none;
+      stroke-width: 0;
+    }
+  }
+}
 
 
 .work-section {
   position: relative;
-  padding: 0px 0;
+  padding: 30px 30px 50px 30px;
   width: 100%;
   background: $black;
   // background: linear-gradient(to bottom, #111111 0%,#404248 100%);
   color: $white;
   text-align: center;
-
-  .portfolio-head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #070707;
-    height: 200px;
-  }
 
   h2 {
     margin-bottom: 8px;

@@ -1,27 +1,43 @@
 .navbar {
-  position: fixed;
+  // position: fixed;
+  display: flex;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  // background: rgba(0, 0, 0, 0.9);
   color: $white;
-  height: 50px;
+  height: 75px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 99999999;
-  a {
-    display: inline-block;
-    height: 50px;
-    width: 32%;
-    text-align: center;
-    line-height: 50px;
-    &:hover {
-      background: lighten($black, 10%);
-    }
-    &:active {
-      background: lighten($black, 20%);
+  padding: 0 2%;
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    a {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-size: 48px;
     }
   }
-  @media screen and #{$desktop} {
-    padding-left: 50%;
+  .main-nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    a {
+      padding: 0 50px;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      font-size: 18px;
+      &:hover {
+        background: lighten($black, 10%);
+      }
+      &:active {
+        background: lighten($black, 20%);
+      }
+    }
   }
 }
 .active {
