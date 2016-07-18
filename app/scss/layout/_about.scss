@@ -1,7 +1,9 @@
 .about-section {
+  display: flex;
+  flex-wrap: wrap;
   background: $grayBlue;
-  background-image: url("../img/PortfolioBGpic3.jpg");
-  background-position: center;
+  background-image: url("../img/PortfolioBG-bw1.jpg");
+  background-position: right;
   background-size: cover;
   background-attachment: fixed;
   color: $white;
@@ -13,14 +15,19 @@
     justify-content: center;
     // background: #070707;
     height: 200px;
+    flex: 0 0 100%;
   }
 
 
   h2 {
+    display: block;
+    border: 1px solid red;
     text-align: center;
     margin-bottom: 2em;
     position: relative;
     font-weight: 300;
+    width: 100%;
+    flex: 2;
     &:after {
       @extend .hborder;
     }
@@ -32,30 +39,36 @@
     border-radius: 50%;
     background: $lightGray;
     margin: 0 auto 1em auto;
-    // border: 1px solid orange;
   }
-  .about-me {
-    color: $white;
-    max-width: 600px;
-    margin: 0 auto 2em auto;
-    overflow: auto;
-    h4 {
-      margin-bottom: 1em;
-      font-weight: 300;
-      color: $lightBlue;
-    }
-    p {
-      margin-bottom: 1em;
-      line-height: 1.2;
-    }
-    a {
-      display: inline-block;
-      float: right;
-      border: 1px solid lime;
-      padding: 15px 20px;
-      border-radius: 2px;
-      &:hover {
-        border-color: lighten(lime, 25%);
+  .about-top {
+
+    // justify-content: flex-end;
+    margin-left: auto;
+    // max-width: 500px;
+    .about-me {
+      font-size: 18px;
+      color: $white;
+      max-width: 600px;
+      // margin: 0 0 2em auto;
+      // overflow: auto;
+      h4 {
+        margin-bottom: 1em;
+        font-weight: 300;
+        color: $lightBlue;
+      }
+      p {
+        margin-bottom: 1em;
+        line-height: 1.2;
+      }
+      a {
+        display: inline-block;
+        float: right;
+        border: 1px solid lime;
+        padding: 15px 20px;
+        border-radius: 2px;
+        &:hover {
+          border-color: lighten(lime, 25%);
+        }
       }
     }
   }
@@ -68,7 +81,7 @@
     h3 {
       width: 100%;
       margin: 1em 0;
-      text-align: center;
+      text-align: left;
       font-weight: 300;
       color: $lightBlue;
     }
@@ -97,16 +110,16 @@
   @media screen and(min-width: 768px) {
     .about-top {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
+      // align-items: center;
       width: 100%;
       min-width: 718px;
-      max-width: 1200px;
-      margin: 50px auto;
+      // max-width: 1024px;
+      // margin: 50px auto;
       // border: 1px solid red;
     }
     .about-me {
-      margin: 0 auto 0 50px;
+      // margin: 0 auto 0 50px;
       // border: 1px solid blue;
     }
   }
@@ -114,6 +127,7 @@
 
 
 .about-slant {
+  width: 100%;
   .slant {
     height: 110px;
     width: 100%;

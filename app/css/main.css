@@ -163,7 +163,7 @@ header {
   width: 100%;
   height: 440px;
   background-color: #111;
-  background-image: url("../img/dark-pavement.jpg");
+  background-image: url("../img/dark-pavement1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: -180px;
@@ -327,9 +327,11 @@ main {
       color: #99ff99; }
 
 .about-section {
+  display: flex;
+  flex-wrap: wrap;
   background: #404248;
-  background-image: url("../img/PortfolioBGpic3.jpg");
-  background-position: center;
+  background-image: url("../img/PortfolioBG-bw1.jpg");
+  background-position: right;
   background-size: cover;
   background-attachment: fixed;
   color: #fff; }
@@ -337,12 +339,17 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px; }
+    height: 200px;
+    flex: 0 0 100%; }
   .about-section h2 {
+    display: block;
+    border: 1px solid red;
     text-align: center;
     margin-bottom: 2em;
     position: relative;
-    font-weight: 300; }
+    font-weight: 300;
+    width: 100%;
+    flex: 2; }
   .about-section .avatar {
     display: block;
     width: 200px;
@@ -350,26 +357,27 @@ main {
     border-radius: 50%;
     background: #aaa;
     margin: 0 auto 1em auto; }
-  .about-section .about-me {
-    color: #fff;
-    max-width: 600px;
-    margin: 0 auto 2em auto;
-    overflow: auto; }
-    .about-section .about-me h4 {
-      margin-bottom: 1em;
-      font-weight: 300;
-      color: #bcf; }
-    .about-section .about-me p {
-      margin-bottom: 1em;
-      line-height: 1.2; }
-    .about-section .about-me a {
-      display: inline-block;
-      float: right;
-      border: 1px solid lime;
-      padding: 15px 20px;
-      border-radius: 2px; }
-      .about-section .about-me a:hover {
-        border-color: #80ff80; }
+  .about-section .about-top {
+    margin-left: auto; }
+    .about-section .about-top .about-me {
+      font-size: 18px;
+      color: #fff;
+      max-width: 600px; }
+      .about-section .about-top .about-me h4 {
+        margin-bottom: 1em;
+        font-weight: 300;
+        color: #bcf; }
+      .about-section .about-top .about-me p {
+        margin-bottom: 1em;
+        line-height: 1.2; }
+      .about-section .about-top .about-me a {
+        display: inline-block;
+        float: right;
+        border: 1px solid lime;
+        padding: 15px 20px;
+        border-radius: 2px; }
+        .about-section .about-top .about-me a:hover {
+          border-color: #80ff80; }
   .about-section .skills {
     display: flex;
     flex-wrap: wrap;
@@ -378,7 +386,7 @@ main {
     .about-section .skills h3 {
       width: 100%;
       margin: 1em 0;
-      text-align: center;
+      text-align: left;
       font-weight: 300;
       color: #bcf; }
     .about-section .skills ul {
@@ -402,24 +410,21 @@ main {
   @media screen and (min-width: 768px) {
     .about-section .about-top {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
       width: 100%;
-      min-width: 718px;
-      max-width: 1200px;
-      margin: 50px auto; }
-    .about-section .about-me {
-      margin: 0 auto 0 50px; } }
+      min-width: 718px; } }
 
-.about-slant .slant {
-  height: 110px;
-  width: 100%;
-  margin-top: 0px;
-  margin-bottom: -5px; }
-  .about-slant .slant polygon {
-    fill: #111;
-    border: none;
-    stroke-width: 0; }
+.about-slant {
+  width: 100%; }
+  .about-slant .slant {
+    height: 110px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: -5px; }
+    .about-slant .slant polygon {
+      fill: #111;
+      border: none;
+      stroke-width: 0; }
 
 .contact {
   display: flex;
