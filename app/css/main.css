@@ -309,8 +309,9 @@ main {
   display: flex; }
   .other-projects .project {
     background: #999;
-    height: 200px;
     flex: 1; }
+    .other-projects .project img {
+      display: block; }
     .other-projects .project:nth-of-type(2) {
       background: #333; }
 
