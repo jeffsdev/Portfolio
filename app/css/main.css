@@ -1,4 +1,4 @@
-.hborder, .work-section h4:after, .about-section h2:after {
+.hborder, .about-section h2:after {
   content: "";
   position: absolute;
   top: 28px;
@@ -265,12 +265,6 @@ main {
     justify-content: center;
     background: #070707;
     height: 200px; }
-  .work-section h2 {
-    margin-bottom: 8px; }
-  .work-section h4 {
-    position: relative;
-    font-weight: 300;
-    margin-bottom: 4em; }
 
 .portfolio-item {
   width: 100%;
@@ -282,7 +276,7 @@ main {
     background: #444; }
     @media screen and (min-width: 1024px) {
       .portfolio-item .p-img {
-        width: 40%;
+        width: 50%;
         height: auto; } }
   .portfolio-item .portfolio-item-details {
     margin-top: 5px;
@@ -308,8 +302,17 @@ main {
       display: flex;
       align-items: center;
       background: #000;
-      max-width: 1400px;
       border-right: 2px solid #bcf; } }
+
+.other-projects {
+  background: #666;
+  display: flex; }
+  .other-projects .project {
+    background: #999;
+    height: 200px;
+    flex: 1; }
+    .other-projects .project:nth-of-type(2) {
+      background: #333; }
 
 .comingsoon {
   margin: 100px 0; }
@@ -323,9 +326,17 @@ main {
       color: #99ff99; }
 
 .about-section {
-  padding: 50px 25px;
   background: #404248;
+  background-image: url("../img/PortfolioBGpic3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   color: #fff; }
+  .about-section .about-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px; }
   .about-section h2 {
     text-align: center;
     margin-bottom: 2em;
@@ -402,9 +413,10 @@ main {
 .about-slant .slant {
   height: 110px;
   width: 100%;
-  margin-top: -5px; }
+  margin-top: 0px;
+  margin-bottom: -5px; }
   .about-slant .slant polygon {
-    fill: #404248;
+    fill: #111;
     border: none;
     stroke-width: 0; }
 

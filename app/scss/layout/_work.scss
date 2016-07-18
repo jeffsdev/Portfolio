@@ -30,18 +30,6 @@
     background: #070707;
     height: 200px;
   }
-
-  h2 {
-    margin-bottom: 8px;
-  }
-  h4 {
-    position: relative;
-    font-weight: 300;
-    margin-bottom: 4em;
-    &:after {
-      @extend .hborder;
-    }
-  }
 }
 
 
@@ -54,7 +42,7 @@
     width: 100%;
     background: $gray;
     @media screen and #{$desktop} {
-      width: 40%;
+      width: 50%;
       height: auto;
     }
   }
@@ -87,8 +75,21 @@
     display: flex;
     align-items: center;
     background: $blackblack;
-    max-width:  1400px;
+    // max-width:  1400px;
     border-right: 2px solid $lightBlue;
+  }
+}
+
+.other-projects {
+  background: #666;
+  display: flex;
+  .project {
+    background: #999;
+    height: 200px;
+    flex: 1;
+    &:nth-of-type(2) {
+      background: #333;
+    }
   }
 }
 
