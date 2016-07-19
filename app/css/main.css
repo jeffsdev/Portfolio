@@ -225,7 +225,6 @@ main {
   position: fixed;
   display: flex;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
   color: #fff;
   height: 50px;
   display: flex;
@@ -307,15 +306,19 @@ main {
   font-size: 14px; }
   .portfolio-item .p-img {
     width: 100%;
-    background: #444; }
+    background: #444;
+    border-bottom: 1px solid #111; }
     @media screen and (min-width: 400px) and (orientation: landscape) {
       .portfolio-item .p-img {
         width: 50%;
-        height: auto; } }
+        height: auto;
+        border: 1px solid #111; } }
     @media screen and (min-width: 1024px) {
       .portfolio-item .p-img {
         width: 50%;
-        height: auto; } }
+        height: auto;
+        border: none;
+        border-right: 1px solid #111; } }
   .portfolio-item .portfolio-item-details {
     margin-top: 5px;
     width: 100%;
@@ -358,6 +361,18 @@ main {
       display: block; }
     .other-projects .project:nth-of-type(2) {
       background: #333; }
+    @media screen and (min-width: 1024px) {
+      .other-projects .project {
+        flex: 1 1 30%;
+        margin: 0;
+        border: 2px solid #111; }
+        .other-projects .project:nth-child(1), .other-projects .project:nth-child(5) {
+          border-left: none; }
+        .other-projects .project:nth-child(4), .other-projects .project:nth-child(7) {
+          border-right: none; } }
+
+.projbox {
+  display: none; }
 
 .project-cover {
   position: absolute;
