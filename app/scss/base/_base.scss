@@ -58,6 +58,12 @@ a {
   text-decoration: none;
 }
 
+p {
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
+}
+
 button {
   overflow: visible;
   border: 0;

@@ -3,9 +3,19 @@
   flex-wrap: wrap;
   color: $white;
   text-align: center;
-  height: calc(100vh - 100px);
-  padding-top: 50px;
-  align-content: center;
+  height: calc(100vh - 50px);
+  background: #333;
+  // align-content: center;
+
+  .contact-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $black;
+    height: 200px;
+    flex: 0 0 100%;
+  }
+
   h2 {
     flex: 1 100%;
     margin-bottom: 1em;

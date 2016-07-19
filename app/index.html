@@ -26,8 +26,7 @@
     </script> -->
   </head>
   <body>
-    <header id="header" class="height-fix">
-      <!-- <nav class="navbar">
+      <nav class="navbar">
         <div class="logo">
           <a href="#top">JS</a>
         </div>
@@ -36,12 +35,13 @@
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>
-      </nav> -->
+      </nav>
+    <header id="header" class="height-fix">
       <section id="top"></section>
       <div class="header-box">
         <h1>JEFF SEYMOUR</h1>
+        <!-- <span class="divider-blue"></span> -->
         <h2>Front End Web Developer</h2>
-        <span class="divider-blue"></span>
         <h3>HTML5 &middot; CSS3 &middot; JavaScript &middot; Ruby &middot; Responsive Web Design</h3>
       </div>
       <div class="loader">
@@ -66,13 +66,14 @@
             <h3>Elixir Coffee</h3>
             <p>Elixir Coffee is a website for a local (but fake) coffee shop that I designed and coded.</p>
             <span>&lt; / &gt;</span>
-
             <p>HTML5, CSS3/SCSS, JavaScript, jQuery</p>
             <a href="http://www.elixir-coffee.jeffseymour.me">Visit Site</a>
             <a href="https://github.com/jeffsdev/Elixir-Coffee" target="_blank">View on GitHub</a>
           </div>
+          <div class="portfolio-item-shroud"></div>
         </div>
         <div class="portfolio-item">
+          <img class="p-img" src="img/pintme.jpg" alt="pint me webapp">
           <div class="portfolio-item-details">
             <h3>Pint Me!</h3>
             <p>An Angular 2 web app that dynamically displays kegs and their remaining pints.</p>
@@ -81,7 +82,7 @@
             <!-- <a href="#">Live Demo</a> -->
             <a href="https://github.com/jeffsdev/js-Angular2-TapRoom" target="_blank">View on GitHub</a>
           </div>
-          <img class="p-img" src="img/pintme.jpg" alt="pint me webapp">
+          <div class="portfolio-item-shroud"></div>
         </div>
         <div class="portfolio-item">
           <img class="p-img" src="img/obelisk.jpg" alt="obelisk of wisdom webapp">
@@ -93,6 +94,7 @@
             <!-- <a href="#">Live Demo</a> -->
             <a href="https://github.com/jeffsdev/js-EmberJS-QA_MessageBoard" target="_blank">View on GitHub</a>
           </div>
+
         </div>
         <!-- <div class="portfolio-item">
           <img class="p-img" src="img/crate.jpg" alt="crate webapp">
@@ -107,14 +109,20 @@
         <div class="other-projects">
           <div class="project">
             <div class="project-cover">
-
+              <div class="project-details">
+                <h3>CRATE</h3>
+                <p>CRATE is a web application for collecting and organizing your personal record collection.</p>
+                <span>&lt; / &gt;</span>
+                <p>PHP, jQuery, SCSS, HTML5, Discogs API</p>
+                <a href="https://github.com/jeffsdev/crate" target="_blank">View on GitHub</a>
+              </div>
             </div>
             <img src="img/crate.jpg" alt="">
           </div>
           <div class="project"></div>
           <div class="project"></div>
         </div>
-        <div class="comingsoon">
+        <div class="work-footer">
           <h3>View more of my projects and code on <a href="https://github.com/jeffsdev" target="_blank">GitHub</a>.</h3>
         </div>
       </section>
@@ -196,7 +204,9 @@
       </div>
       </section>
       <section id="contact" class="contact">
-        <h2>Contact</h2>
+        <div class="contact-head">
+          <h1>LET'S WORK TOGETHER</h1>
+        </div>
         <div>
           <p>Get in touch with me!</p>
           <p>seym1585@gmail.com</p>

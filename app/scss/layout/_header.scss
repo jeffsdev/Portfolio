@@ -11,7 +11,8 @@ header {
   background-image: url('../img/dark-pavement1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -180px;
+  // background-position: -180px;
+
   background-attachment: fixed;
   // z-index: -1;
   transition: 1s;
@@ -48,9 +49,9 @@ header {
     // background: rgba(0, 0, 0, 0.75);
     color: $lightGray;
     padding: 3%;
-
     text-align: center;
     transition: 1s;
+    // transform: translateY(-50%);
     .divider-blue {
       display: block;
       margin: 8px auto;
@@ -63,7 +64,6 @@ header {
     }
     h1 {
       font-weight: 700;
-
       @media screen and #{$tablet} {
         font-size: 6em;
         text-align: center;
@@ -71,6 +71,7 @@ header {
       }
     }
     h2 {
+      color: #7db1e1;
       font-weight: 700;
       font-size: 1.5em;
       margin-top: 8px;
@@ -80,7 +81,9 @@ header {
     }
     h3 {
       font-size: 1em;
-      font-weight: 100;
+      font-weight: 300;
+      color: #00ff78;
+      margin-top: 200px;
       @media screen and #{$tablet} {
         font-size: 1.25em;
       }

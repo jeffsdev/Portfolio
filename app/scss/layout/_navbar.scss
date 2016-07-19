@@ -1,5 +1,5 @@
 .navbar {
-  // position: fixed;
+  position: absolute;
   display: flex;
   width: 100%;
   // background: rgba(0, 0, 0, 0.9);
@@ -19,6 +19,8 @@
       align-items: center;
       height: 100%;
       font-size: 48px;
+      color: #7db1e1;
+      font-weight: 500;
     }
   }
   .main-nav {

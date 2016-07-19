@@ -76,6 +76,10 @@ button {
 a {
   text-decoration: none; }
 
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 18px; } }
+
 button {
   overflow: visible;
   border: 0;
@@ -166,7 +170,6 @@ header {
   background-image: url("../img/dark-pavement1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -180px;
   background-attachment: fixed;
   transition: 1s; }
   @media screen and (min-height: 500px) {
@@ -198,6 +201,7 @@ header {
           text-align: center;
           margin: auto; } }
     header .header-box h2 {
+      color: #7db1e1;
       font-weight: 700;
       font-size: 1.5em;
       margin-top: 8px; }
@@ -206,7 +210,9 @@ header {
           font-size: 2.5em; } }
     header .header-box h3 {
       font-size: 1em;
-      font-weight: 100; }
+      font-weight: 300;
+      color: #00ff78;
+      margin-top: 200px; }
       @media screen and (min-width: 768px) {
         header .header-box h3 {
           font-size: 1.25em; } }
@@ -215,6 +221,7 @@ main {
   background: #111; }
 
 .navbar {
+  position: absolute;
   display: flex;
   width: 100%;
   color: #fff;
@@ -232,7 +239,9 @@ main {
       display: flex;
       align-items: center;
       height: 100%;
-      font-size: 48px; }
+      font-size: 48px;
+      color: #7db1e1;
+      font-weight: 500; }
   .navbar .main-nav {
     display: flex;
     align-items: center;
@@ -256,21 +265,33 @@ main {
   position: relative;
   padding: 0px 0;
   width: 100%;
-  background: #111;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
   text-align: center; }
   .work-section .portfolio-head {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #070707;
     height: 200px; }
+  .work-section .work-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    height: 200px; }
+    .work-section .work-footer a {
+      color: lime; }
+      .work-section .work-footer a:hover {
+        color: #99ff99; }
 
 .portfolio-item {
   width: 100%;
-  background: #111;
+  background: #444;
   margin: auto;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  max-width: 1400px; }
   .portfolio-item .p-img {
     width: 100%;
     background: #444; }
@@ -281,7 +302,7 @@ main {
   .portfolio-item .portfolio-item-details {
     margin-top: 5px;
     width: 100%;
-    background: #000;
+    background: #666;
     padding: 1em; }
     .portfolio-item .portfolio-item-details p {
       margin: 1em; }
@@ -301,13 +322,14 @@ main {
     .portfolio-item {
       display: flex;
       align-items: center;
-      background: #000;
+      background: #666;
       border-right: 2px solid #bcf; } }
 
 .other-projects {
   background: #666;
   display: flex; }
   .other-projects .project {
+    position: relative;
     background: #999;
     flex: 1; }
     .other-projects .project img {
@@ -315,16 +337,38 @@ main {
     .other-projects .project:nth-of-type(2) {
       background: #333; }
 
-.comingsoon {
-  margin: 100px 0; }
-  .comingsoon h3, .comingsoon h4 {
-    margin: 1em 0; }
-  .comingsoon h4:after {
-    border: none; }
-  .comingsoon a {
-    color: lime; }
-    .comingsoon a:hover {
-      color: #99ff99; }
+.project-cover {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #bcf;
+  opacity: 0.9;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.6s; }
+  .project-cover:hover {
+    opacity: 0.9;
+    transition: 0.6s; }
+  .project-cover .project-details {
+    width: 75%;
+    color: #111; }
+    .project-cover .project-details h3 {
+      font-size: 2.25em;
+      margin: 1rem 0; }
+    .project-cover .project-details p {
+      margin: 1rem 0; }
+    .project-cover .project-details a {
+      display: inline-block;
+      color: #bcf;
+      border: 1px solid #bcf;
+      padding: 10px;
+      margin: 10px 10px; }
+      .project-cover .project-details a:hover {
+        background: #404248; }
+      .project-cover .project-details a:active {
+        background: #70747e; }
 
 .about-section {
   display: flex;
@@ -431,9 +475,15 @@ main {
   flex-wrap: wrap;
   color: #fff;
   text-align: center;
-  height: calc(100vh - 100px);
-  padding-top: 50px;
-  align-content: center; }
+  height: calc(100vh - 50px);
+  background: #333; }
+  .contact .contact-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    height: 200px;
+    flex: 0 0 100%; }
   .contact h2 {
     flex: 1 100%;
     margin-bottom: 1em; }
