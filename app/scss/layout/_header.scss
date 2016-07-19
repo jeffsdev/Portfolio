@@ -6,20 +6,21 @@ header {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 440px;
+  height: 100vh;
   background-color: $black;
   background-image: url('../img/dark-pavement1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  transition: 1s;
   // background-position: -180px;
 
-  background-attachment: fixed;
   // z-index: -1;
-  transition: 1s;
   //breakpoints at 568, 640, 667, 768, 900, 1024, 1280, 1366, 1440, 1600,
-  @media screen and #{$xs-mobile} {
-    height: 100vh;
-  }
+  // @media screen and #{$xs-mobile} {
+  //
+  // }
   // @media screen and #{$s-mobile} {
   //   height: 640px;
   // }
@@ -36,9 +37,8 @@ header {
   // @media screen and(min-width: 768px) {
   //   background-position: -140px;
   // }
-  @media screen and(min-width: 1024px) {
-    background-position: left;
-  }
+  // @media screen and(min-width: 1024px) {
+  // }
 
 
 
@@ -83,7 +83,7 @@ header {
       font-size: 1em;
       font-weight: 300;
       color: #00ff78;
-      margin-top: 200px;
+      margin-top: 35%;
       @media screen and #{$tablet} {
         font-size: 1.25em;
       }
