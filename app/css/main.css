@@ -201,7 +201,7 @@ header {
           text-align: center;
           margin: auto; } }
     header .header-box h2 {
-      color: #7db1e1;
+      color: #bcf;
       font-weight: 700;
       font-size: 1.5em;
       margin-top: 8px; }
@@ -282,9 +282,9 @@ main {
     background: #111;
     height: 200px; }
     .work-section .work-footer a {
-      color: lime; }
+      color: #00ff78; }
       .work-section .work-footer a:hover {
-        color: #99ff99; }
+        color: #99ffc9; }
 
 .portfolio-item {
   width: 100%;
@@ -302,6 +302,7 @@ main {
   .portfolio-item .portfolio-item-details {
     margin-top: 5px;
     width: 100%;
+    height: 100%;
     background: #666;
     padding: 1em; }
     .portfolio-item .portfolio-item-details p {
@@ -417,11 +418,12 @@ main {
       .about-section .about-top .about-me a {
         display: inline-block;
         float: right;
-        border: 1px solid lime;
-        padding: 15px 20px;
-        border-radius: 2px; }
+        color: #00ff78;
+        border: 1px solid #00ff78;
+        padding: 15px 20px; }
         .about-section .about-top .about-me a:hover {
-          border-color: #80ff80; }
+          border-color: #80ffbc;
+          color: #80ffbc; }
   .about-section .skills {
     display: flex;
     flex-wrap: wrap;

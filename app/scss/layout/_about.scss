@@ -63,11 +63,12 @@
       a {
         display: inline-block;
         float: right;
-        border: 1px solid lime;
+        color: $lightGreen;
+        border: 1px solid $lightGreen;
         padding: 15px 20px;
-        border-radius: 2px;
         &:hover {
-          border-color: lighten(lime, 25%);
+          border-color: lighten($lightGreen, 25%);
+          color: lighten($lightGreen, 25%);
         }
       }
     }
