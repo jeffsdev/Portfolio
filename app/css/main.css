@@ -78,7 +78,8 @@ a {
 
 @media screen and (min-width: 1024px) {
   p {
-    font-size: 18px; } }
+    font-size: 18px;
+    line-height: 1.25em; } }
 
 button {
   overflow: visible;
@@ -112,6 +113,9 @@ img {
   @media screen and (min-width: 400px) and (orientation: landscape) {
     .loader {
       bottom: 15px; } }
+  @media screen and (min-width: 768px) {
+    .loader {
+      bottom: 100px; } }
 
 .block {
   width: 10px;
@@ -125,6 +129,12 @@ img {
   .block:nth-child(2) {
     margin-top: 10px;
     animation-delay: 500ms; }
+  @media screen and (min-width: 768px) {
+    .block {
+      width: 20px;
+      height: 20px; }
+      .block:nth-child(2) {
+        margin-top: 20px; } }
 
 @keyframes pulse {
   50% {
@@ -225,6 +235,7 @@ main {
   position: fixed;
   display: flex;
   width: 100%;
+  background: rgba(0, 0, 0, 0.9);
   color: #fff;
   height: 50px;
   display: flex;
@@ -294,6 +305,12 @@ main {
       max-width: 75px;
       padding-left: 25px;
       opacity: 0.25; }
+    @media screen and (min-width: 1024px) {
+      .work-section .work-footer {
+        height: 150px; } }
+  @media screen and (min-width: 1024px) {
+    .work-section {
+      padding: 0; } }
 
 .portfolio-item {
   width: 100%;
@@ -451,12 +468,12 @@ main {
       color: #fff;
       max-width: 600px; }
       .about-section .about-top .about-me h4 {
-        margin-bottom: 1em;
+        margin: 1em 0;
         font-weight: 300;
         color: #bcf; }
       .about-section .about-top .about-me p {
         margin-bottom: 1em;
-        line-height: 1.2; }
+        line-height: 1.25; }
       .about-section .about-top .about-me a {
         display: inline-block;
         float: right;
@@ -470,7 +487,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: auto;
+    margin: 25px auto 0 auto;
     flex: 1 1 100%;
     font-size: 14px; }
     .about-section .skills h3 {
@@ -480,26 +497,44 @@ main {
       font-weight: 300;
       color: #bcf; }
     .about-section .skills ul {
-      flex: 1 10%;
-      margin: 0 5px 1em 5px; }
+      flex: 1 1 50%;
+      justify-content: space-between;
+      margin: 0 0 1em 0; }
       @media screen and (min-width: 400px) {
         .about-section .skills ul {
-          margin: 0 10px 1em 10px; } }
+          margin: 0 0 1em 0; } }
       @media screen and (min-width: 400px) and (orientation: landscape) {
         .about-section .skills ul {
-          margin: 0 30px 1em 30px; } }
+          margin: 0 0 1em 0;
+          flex: 1 25%; } }
       @media screen and (min-width: 590px) {
         .about-section .skills ul {
-          margin: 0 30px 1em 30px; } }
+          margin: 0 0 1em 0; } }
       @media screen and (min-width: 768px) {
         .about-section .skills ul {
-          margin: 0 40px 1em 40px; } }
+          margin: 0 0 1em 0;
+          flex: 1 25%; } }
       @media screen and (min-width: 1024px) {
         .about-section .skills ul {
-          margin: 0 10px 1em 10px; } }
+          margin: 0 0 1em 0;
+          flex: 1 15%; } }
+      .about-section .skills ul:nth-child(6), .about-section .skills ul:nth-child(7) {
+        flex: 2 20%; }
+      .about-section .skills ul:nth-child(6) {
+        padding-right: 15px; }
     .about-section .skills li:first-child {
       font-weight: bold;
       margin-bottom: 1em; }
+    .about-section .skills li {
+      line-height: 1.25em; }
+    @media screen and (min-width: 768px) {
+      .about-section .skills {
+        width: 75%;
+        min-width: 600px; } }
+    @media screen and (min-width: 1024px) {
+      .about-section .skills {
+        width: 100%;
+        max-width: 1200px; } }
   @media screen and (min-width: 400px) and (orientation: landscape) {
     .about-section {
       background-position: left; } }
@@ -509,6 +544,9 @@ main {
       justify-content: center;
       width: 100%;
       min-width: 718px; } }
+  @media screen and (min-width: 768px) {
+    .about-section {
+      padding-bottom: 25px; } }
 
 .other-skills {
   flex: 1 1 100%;
@@ -522,6 +560,11 @@ main {
     margin-bottom: 1em; }
   .other-skills p {
     margin: 1em 0; }
+  @media screen and (min-width: 768px) {
+    .other-skills span {
+      display: inline; }
+    .other-skills p {
+      margin: 1em 0; } }
 
 .about-slant {
   width: 100%; }
@@ -540,11 +583,16 @@ main {
   flex-wrap: wrap;
   color: #fff;
   text-align: center;
-  height: calc(100vh - 50px);
+  height: calc(100vh);
   background: #333;
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
-  animation: blah infinite; }
+  background-color: #000;
+  background-image: url("../img/dark-pavement1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  animation: blah infinite;
+  margin-bottom: -100px; }
 
 @keyframes blah {
   0% {
@@ -560,18 +608,18 @@ main {
     flex: 0 0 100%; }
     .contact .contact-head h1 {
       font-size: 2.25em; }
-  .contact h2 {
-    flex: 1 100%;
-    margin-bottom: 1em; }
-    @media screen and (min-width: 768px) {
-      .contact h2 {
-        font-size: 3em; } }
+    @media screen and (min-width: 1024px) {
+      .contact .contact-head {
+        height: 200px; } }
   .contact div {
     flex: 1 100%; }
-  .contact p {
+  .contact .contact-box p {
     margin-bottom: 1em; }
+    .contact .contact-box p:first-child {
+      color: #bcf;
+      font-weight: 500; }
     @media screen and (min-width: 768px) {
-      .contact p {
+      .contact .contact-box p {
         font-size: 2em; } }
 
 .social-icons {
@@ -584,7 +632,10 @@ main {
     width: 40px; }
 
 footer {
-  height: 51px;
-  color: white;
-  text-align: center;
-  font-size: 0.8em; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; }
+  footer p {
+    color: white;
+    font-size: 0.8rem; }

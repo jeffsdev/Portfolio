@@ -41,6 +41,12 @@
       padding-left: 25px;
       opacity: 0.25;
     }
+    @media screen and #{$desktop} {
+      height: 150px;
+    }
+  }
+  @media screen and #{$desktop} {
+    padding: 0;
   }
 }
 
