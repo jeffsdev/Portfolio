@@ -16,7 +16,7 @@
 
 .work-section {
   position: relative;
-  padding: 0px 0;
+  padding: 0px 2%;
   width: 100%;
   // background-image: url("../img/dark-pavement1.jpg");
   // background: #555;
@@ -33,14 +33,19 @@
     align-items: center;
     justify-content: center;
     // background: #070707;
-    height: 200px;
+    height: 100px;
+    h1 {
+      font-size: 2.25em;
+    }
   }
   .work-footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background: $black;
-    height: 200px;
+    height: 100px;
+    max-width: 75%;
+    margin: auto;
     a {
       color: $lightGreen;
       &:hover {
@@ -48,8 +53,8 @@
       }
     }
     img {
-      max-width: 125px;
-      padding-left: 50px;
+      max-width: 75px;
+      padding-left: 25px;
       opacity: 0.25;
     }
   }
@@ -115,13 +120,15 @@
 }
 
 .other-projects {
-  background: #666;
+  // background: #666;
   display: flex;
+  flex-wrap: wrap;
   .project {
     position: relative;
     background: #999;
     // height: 360px;
-    flex: 1;
+    flex: 1 1 40%;
+    margin: 2.5%;
     img {
       display: block;
     }
