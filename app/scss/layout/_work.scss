@@ -47,6 +47,11 @@
         color: lighten($lightGreen, 30%);
       }
     }
+    img {
+      max-width: 125px;
+      padding-left: 50px;
+      opacity: 0.25;
+    }
   }
 }
 
@@ -54,7 +59,9 @@
 .portfolio-item {
 
   width: 100%;
-  background: $gray;
+  background: darken($gray, 50%);
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
   margin: auto;
   margin-bottom: 25px;
   max-width: 1400px;
@@ -73,7 +80,7 @@
     margin-top: 5px;
     width: 100%;
     height: 100%;
-    background: #666;
+    // background: #666;
     padding: 1em;
     h3 {
 
@@ -101,7 +108,7 @@
   @media screen and #{$desktop} {
     display: flex;
     align-items: center;
-    background: #666;
+    // background: #666;
     // max-width:  1400px;
     border-right: 2px solid $lightBlue;
   }
@@ -158,7 +165,7 @@
     }
     a {
       display: inline-block;
-      color: $lightBlue;
+      background: lighten($grayBlue, 20%);
       border: 1px solid $lightBlue;
       padding: 10px;
       margin: 10px 10px;

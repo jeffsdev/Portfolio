@@ -285,10 +285,16 @@ main {
       color: #00ff78; }
       .work-section .work-footer a:hover {
         color: #99ffc9; }
+    .work-section .work-footer img {
+      max-width: 125px;
+      padding-left: 50px;
+      opacity: 0.25; }
 
 .portfolio-item {
   width: 100%;
-  background: #444;
+  background: black;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
   margin: auto;
   margin-bottom: 25px;
   max-width: 1400px; }
@@ -303,7 +309,6 @@ main {
     margin-top: 5px;
     width: 100%;
     height: 100%;
-    background: #666;
     padding: 1em; }
     .portfolio-item .portfolio-item-details p {
       margin: 1em; }
@@ -323,7 +328,6 @@ main {
     .portfolio-item {
       display: flex;
       align-items: center;
-      background: #666;
       border-right: 2px solid #bcf; } }
 
 .other-projects {
@@ -362,7 +366,7 @@ main {
       margin: 1rem 0; }
     .project-cover .project-details a {
       display: inline-block;
-      color: #bcf;
+      background: #70747e;
       border: 1px solid #bcf;
       padding: 10px;
       margin: 10px 10px; }
@@ -374,6 +378,7 @@ main {
 .about-section {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   background: #404248;
   background-image: url("../img/PortfolioBG-bw1.jpg");
   background-position: right;
@@ -428,7 +433,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: auto; }
+    margin: auto;
+    flex: 1 1 100%; }
     .about-section .skills h3 {
       width: 100%;
       margin: 1em 0;
@@ -459,6 +465,17 @@ main {
       justify-content: center;
       width: 100%;
       min-width: 718px; } }
+
+.other-skills {
+  flex: 1 1 100%;
+  max-width: 800px;
+  margin: auto;
+  height: 100px; }
+  .other-skills span {
+    font-weight: 500;
+    margin-right: 1rem; }
+  .other-skills p {
+    margin: 1em 0; }
 
 .about-slant {
   width: 100%; }
