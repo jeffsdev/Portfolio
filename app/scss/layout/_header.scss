@@ -45,7 +45,7 @@ header {
 
   .header-box {
     // position: fixed;
-    width: 100%;
+    width: 80%;
     // background: rgba(0, 0, 0, 0.75);
     color: $lightGray;
     padding: 3%;
@@ -84,10 +84,14 @@ header {
       font-weight: 300;
       color: #00ff78;
       margin-top: 35%;
+      @media screen and #{$s-phone} and (orientation: landscape) {
+        margin-top: 10%;
+      }
       @media screen and #{$tablet} {
         font-size: 1.25em;
       }
     }
+
     // @media screen and(min-width: 400px) {
     //   width: 200px;
     //   right: initial;

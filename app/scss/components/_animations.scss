@@ -19,6 +19,9 @@ $glow-color: #aaf;
   padding: 20px;
   z-index: 1;
   animation: float 5s 3;
+  @media screen and #{$s-phone} and (orientation: landscape) {
+    bottom: 15px;
+  }
 }
 // .loader {
 //   position: absolute;
