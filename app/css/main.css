@@ -1,4 +1,4 @@
-.hborder, .about-section h2:after {
+.hborder {
   content: "";
   position: absolute;
   top: 28px;
@@ -79,7 +79,7 @@ a {
 @media screen and (min-width: 1024px) {
   p {
     font-size: 18px;
-    line-height: 1.25em; } }
+    line-height: 1.5em; } }
 
 button {
   overflow: visible;
@@ -98,6 +98,26 @@ img {
   max-width: 100%;
   height: auto;
   border: 0; }
+
+.portfolio-item .portfolio-item-details a {
+  display: inline-block;
+  color: #abf;
+  border: 1px solid #abf;
+  padding: 10px;
+  margin: 10px 10px; }
+  .portfolio-item .portfolio-item-details a:hover, .portfolio-item .portfolio-item-details a:active {
+    background: #abf;
+    color: #111; }
+
+.about-section .about-me a {
+  display: inline-block;
+  color: #00ff78;
+  border: 1px solid #00ff78;
+  float: right;
+  padding: 15px 20px; }
+  .about-section .about-me a:hover, .about-section .about-me a:active {
+    background: #00ff78;
+    color: #111; }
 
 .loader {
   position: absolute;
@@ -197,7 +217,7 @@ header {
       margin: 8px auto;
       width: 200px;
       height: 3px;
-      background: #bcf; }
+      background: #abf; }
       @media screen and (min-width: 768px) {
         header .header-box .divider-blue {
           margin: 16px auto; } }
@@ -209,7 +229,7 @@ header {
           text-align: center;
           margin: auto; } }
     header .header-box h2 {
-      color: #bcf;
+      color: #abf;
       font-weight: 700;
       font-size: 1.5em;
       margin-top: 8px; }
@@ -252,7 +272,7 @@ main {
       align-items: center;
       height: 100%;
       font-size: 2.25em;
-      color: #7db1e1;
+      color: #abf;
       font-weight: 500; }
   .navbar .main-nav {
     display: flex;
@@ -346,26 +366,17 @@ main {
       margin: 1em; }
     .portfolio-item .portfolio-item-details img {
       height: 25px; }
-    .portfolio-item .portfolio-item-details a {
-      display: inline-block;
-      color: #bcf;
-      border: 1px solid #bcf;
-      padding: 10px;
-      margin: 10px 10px; }
-      .portfolio-item .portfolio-item-details a:hover {
-        background: #404248; }
-      .portfolio-item .portfolio-item-details a:active {
-        background: #70747e; }
   @media screen and (min-width: 400px) and (orientation: landscape) {
     .portfolio-item {
       display: flex;
       align-items: center;
-      border-right: 2px solid #bcf; } }
+      border-right: 2px solid #abf; } }
   @media screen and (min-width: 1024px) {
     .portfolio-item {
       display: flex;
       align-items: center;
-      border-right: 2px solid #bcf; } }
+      font-size: 1em;
+      border-right: 2px solid #abf; } }
 
 .scroll-fadein {
   opacity: 0; }
@@ -389,22 +400,6 @@ main {
     flex: 0 0 100%; }
     .about-section .about-head h1 {
       font-size: 2.25em; }
-  .about-section h2 {
-    display: block;
-    border: 1px solid red;
-    text-align: center;
-    margin-bottom: 2em;
-    position: relative;
-    font-weight: 300;
-    width: 100%;
-    flex: 2; }
-  .about-section .avatar {
-    display: block;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: #aaa;
-    margin: 0 auto 1em auto; }
   .about-section .about-top {
     margin-left: auto; }
     .about-section .about-top .about-me {
@@ -413,19 +408,10 @@ main {
       .about-section .about-top .about-me h4 {
         margin: 1em 0;
         font-weight: 300;
-        color: #bcf; }
+        color: #abf; }
       .about-section .about-top .about-me p {
         margin-bottom: 1em;
-        line-height: 1.25; }
-      .about-section .about-top .about-me a {
-        display: inline-block;
-        float: right;
-        color: #00ff78;
-        border: 1px solid #00ff78;
-        padding: 15px 20px; }
-        .about-section .about-top .about-me a:hover {
-          border-color: #80ffbc;
-          color: #80ffbc; }
+        line-height: 1.5em; }
   .about-section .skills {
     display: flex;
     flex-wrap: wrap;
@@ -438,7 +424,7 @@ main {
       margin: 1em 0;
       text-align: left;
       font-weight: 300;
-      color: #bcf; }
+      color: #abf; }
     .about-section .skills ul {
       flex: 1 1 50%;
       justify-content: space-between;
@@ -559,7 +545,7 @@ main {
   .contact .contact-box p {
     margin-bottom: 1em; }
     .contact .contact-box p:first-child {
-      color: #bcf;
+      color: #abf;
       font-weight: 500; }
     @media screen and (min-width: 768px) {
       .contact .contact-box p {

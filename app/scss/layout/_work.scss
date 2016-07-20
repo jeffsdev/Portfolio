@@ -53,7 +53,6 @@
 
 
 .portfolio-item {
-
   width: 100%;
   background: darken($gray, 50%);
   background-color: #000000;
@@ -83,43 +82,23 @@
     margin-top: 5px;
     width: 100%;
     height: 100%;
-    // background: #666;
     padding: 1em;
-    h3 {
-
-    }
     p {
       margin: 1em;
     }
     img {
       height: 25px;
     }
-    a {
-      display: inline-block;
-      color: $lightBlue;
-      border: 1px solid $lightBlue;
-      padding: 10px;
-      margin: 10px 10px;
-      &:hover {
-        background: $grayBlue;
-      }
-      &:active {
-        background: lighten($grayBlue, 20%);
-      }
-    }
   }
   @media screen and #{$s-phone} and (orientation: landscape) {
     display: flex;
     align-items: center;
-    // background: #666;
-    // max-width:  1400px;
     border-right: 2px solid $lightBlue;
   }
   @media screen and #{$desktop} {
     display: flex;
     align-items: center;
-    // background: #666;
-    // max-width:  1400px;
+    font-size: 1em;
     border-right: 2px solid $lightBlue;
   }
 }

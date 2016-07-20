@@ -76,6 +76,17 @@ $( document ).ready(function() {
       return false;
   });
 
+  $(".loader").on('click', function () {
+    var $el = $(this);
+      var id = $el.attr('href');
+
+      $('html, body').animate({
+        scrollTop: $(id).offset().top - nav_height +1
+      }, 1500);
+
+      return false;
+  });
+
 
   $('a[href="#top"]').click(function() {
     var $el = $(this);

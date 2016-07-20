@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   font: 16px/1 $robotoStack;
-  font-weight: 300; 
+  font-weight: 300;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background: $black;
@@ -61,7 +61,7 @@ a {
 p {
   @media screen and #{$desktop} {
     font-size: 18px;
-    line-height: 1.25em;
+    line-height: 1.5em;
   }
 }
 
