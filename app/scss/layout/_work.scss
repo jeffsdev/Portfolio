@@ -27,7 +27,8 @@
     align-items: center;
     justify-content: center;
     background: $black;
-    height: 100px;
+    height: 125px;
+    padding-bottom: 25px;
     max-width: 75%;
     margin: auto;
     a {
@@ -120,92 +121,5 @@
     // background: #666;
     // max-width:  1400px;
     border-right: 2px solid $lightBlue;
-  }
-}
-
-.other-projects {
-  // background: #666;
-  display: flex;
-  flex-wrap: wrap;
-  .project {
-    position: relative;
-    background: #999;
-    // height: 360px;
-    flex: 1 1 40%;
-    margin: 2.5%;
-    img {
-      display: block;
-    }
-    &:nth-of-type(1) {
-      // background-image: url("../img/crate.jpg");
-      // background-size: cover;
-      // background-position: center;
-    }
-    &:nth-of-type(2) {
-      background: #333;
-    }
-    @media screen and #{$desktop} {
-      flex: 1 1 30%;
-      margin: 0;
-      border: 2px solid $black;
-      &:nth-child(1),
-      &:nth-child(5) {
-        border-left: none;
-      }
-      &:nth-child(4),
-      &:nth-child(7) {
-        border-right: none;
-      }
-    }
-  }
-}
-
-.projbox {
-  display: none;
-}
-
-.project-cover {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: $lightBlue;
-  background-color: #010718;
-  background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
-  opacity: 0.9;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.6s;
-  &:hover {
-  opacity: 0.9;
-    transition: 0.6s;
-  }
-  .project-details {
-    // border: 1px solid red;
-    width: 75%;
-    color: $black;
-  color: white;
-    h3 {
-      font-size: 2.25em;
-      margin: 1rem 0;
-    }
-    p {
-      margin: 1rem 0;
-    }
-    a {
-      display: inline-block;
-      // background: lighten($grayBlue, 20%);
-      border: 1px solid $lightBlue;
-      color: $lightBlue;
-      padding: 10px;
-      margin: 10px 10px;
-      &:hover {
-        background: $grayBlue;
-      }
-      &:active {
-        background: lighten($grayBlue, 20%);
-      }
-    }
   }
 }

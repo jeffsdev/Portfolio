@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+
   // Fix for funky fixed background 100%vh viewport size re-sizing jumpy bug on mobile browsers
   if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     var h = $('.height-fix').height();
@@ -6,46 +7,43 @@ $( document ).ready(function() {
   }
 
 
-
-
-
   // scroll and display effects
 
-  var sections = $('section')
-    , nav = $('.navbar')
-    , nav_height = nav.outerHeight();
+  var sections = $('section');
+  var nav = $('.main-nav');
+  var nav_height = nav.outerHeight();
 
-  $(window).on('scroll', function () {
+  $(document).scroll(function(){
+    var st = $(this).scrollTop();
+    var navHeight = 50;
     var cur_pos = $(this).scrollTop();
-    var a_active = $('a[href="#about"]').hasClass("active");
-    var c_active = $('a[href="#contact"]').hasClass("active");
 
-    sections.each(function() {
-      var top = $(this).offset().top - nav_height,
-          bottom = top + $(this).outerHeight();
+    $('section').each(function(index, element) {
+  		if(st + navHeight > $(this).offset().top && st + navHeight  <= $(this).offset().top + $(this).height()  ){
+        var id = $(this).attr('id');
 
-      if (cur_pos >= top && cur_pos <= bottom) {
-        nav.find('a').removeClass('active');
         sections.removeClass('active');
+        $('a[href="#'+id+'"]').addClass('active');
 
-        // $(this).addClass('active');
-        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+      } else {
+        var id = $(this).attr('id');
 
-        // hide ".header-box" when viewing bottom of page.
-        if (a_active || c_active) {
-          $(".header-box").css("display", "none");
-          console.log("hi");
-        } else {
-          $(".header-box").css("display", "block");
-        }
-      }
-    });
+        sections.removeClass('active');
+        $('a[href="#'+id+'"]').removeClass('active');
+  		}
+  	});
+    // add active class to contact if at bottom of page
+    if(cur_pos === ( $(document).height() - window.innerHeight )){
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+      nav.find('a[href="#contact"]').addClass('active');
+    }
   });
 
-  nav.find('a').on('click', function () {
 
-    var $el = $(this)
-      , id = $el.attr('href');
+  nav.find('a').on('click', function () {
+    var $el = $(this);
+      var id = $el.attr('href');
 
       $('html, body').animate({
         scrollTop: $(id).offset().top - nav_height +1
@@ -56,19 +54,46 @@ $( document ).ready(function() {
 
 
   $('a[href="#top"]').click(function() {
-    var $el = $(this)
-      , id = $el.attr('href');
+    var $el = $(this);
+    var id = $el.attr('href');
 
     nav.find('a').removeClass('active');
     sections.removeClass('active');
     $el.addClass("active");
 
     $('html, body').animate({
-      scrollTop: $(id).offset().top - nav_height
-    }, 500);
+      scrollTop: $(id).offset().top -500});
 
     return false;
   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // $(".project").mouseenter(function() {
+  //   $(this).css("flex", "2");
+  // })
+  // $(".project").mouseleave(function() {
+  //   $(this).css("flex", "1");
+  // })
+
+
+  //
+  // $(".project-cover").click(function() {
+  //   $(this).fadeToggle("slow", "linear");
+  //   $(this).css("display", "flex");
+  //   $(".projbox").slideDown("slow");
+  // })
 
 
 
