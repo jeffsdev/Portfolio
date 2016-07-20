@@ -546,7 +546,8 @@ main {
     margin-bottom: 1em; }
     .contact .contact-box p:first-child {
       color: #abf;
-      font-weight: 500; }
+      font-weight: 500;
+      margin-bottom: 100px; }
     @media screen and (min-width: 768px) {
       .contact .contact-box p {
         font-size: 2em; } }

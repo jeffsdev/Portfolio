@@ -43,16 +43,13 @@
       &:first-child {
         color: $lightBlue;
         font-weight: 500;
+        margin-bottom: 100px;
       }
       @media screen and #{$tablet} {
         font-size: 2em;
       }
     }
   }
-  // p:last-child {
-  //   flex: 1 100%;
-  //   font-size: 1em;
-  // }
 }
 
 .social-icons {
