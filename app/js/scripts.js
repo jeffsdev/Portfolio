@@ -38,6 +38,25 @@ $( document ).ready(function() {
       sections.removeClass('active');
       nav.find('a[href="#contact"]').addClass('active');
     }
+
+
+
+    // fade in portfolio items when scrolling over them
+    $('.scroll-fadein').each( function(i){
+      var bottom_of_item = $(this).offset().top + $(this).outerHeight() -100;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+    // initiate fade-in
+      if( bottom_of_window > bottom_of_item ){
+        $(this).animate({'opacity':'1'},500);
+      }
+    });
+
+
+
+
+
+
   });
 
 

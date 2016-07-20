@@ -367,6 +367,9 @@ main {
       align-items: center;
       border-right: 2px solid #bcf; } }
 
+.scroll-fadein {
+  opacity: 0; }
+
 .about-section {
   display: flex;
   flex-wrap: wrap;
