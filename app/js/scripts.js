@@ -53,6 +53,11 @@ $( document ).ready(function() {
     });
 
 
+    if (cur_pos > window.innerHeight -50) {
+      $("nav").css("background", "rgba(0, 0, 0, 0.9)");
+    } else {
+      $("nav").css("background", "none");
+    }
 
 
 

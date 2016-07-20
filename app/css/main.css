@@ -235,14 +235,14 @@ main {
   position: fixed;
   display: flex;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
   color: #fff;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 99999999;
-  padding: 0 2%; }
+  padding: 0 2%;
+  transition: 0.3s; }
   .navbar .logo {
     display: flex;
     align-items: center;
