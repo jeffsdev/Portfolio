@@ -18,6 +18,7 @@ $( document ).ready(function() {
     var navHeight = 50;
     var cur_pos = $(this).scrollTop();
 
+    // change active classes
     $('section').each(function(index, element) {
   		if(st + navHeight > $(this).offset().top && st + navHeight  <= $(this).offset().top + $(this).height()  ){
         var id = $(this).attr('id');
@@ -32,14 +33,13 @@ $( document ).ready(function() {
         $('a[href="#'+id+'"]').removeClass('active');
   		}
   	});
+
     // add active class to contact if at bottom of page
     if(cur_pos === ( $(document).height() - window.innerHeight )){
       nav.find('a').removeClass('active');
       sections.removeClass('active');
       nav.find('a[href="#contact"]').addClass('active');
     }
-
-
 
     // fade in portfolio items when scrolling over them
     $('.scroll-fadein').each( function(i){
@@ -52,19 +52,16 @@ $( document ).ready(function() {
       }
     });
 
-
+    // add backgroudn to nav once it hits portfolio section
     if (cur_pos > window.innerHeight -50) {
       $("nav").css("background", "rgba(0, 0, 0, 0.9)");
     } else {
       $("nav").css("background", "none");
     }
 
-
-
-
   });
 
-
+  // scroll to location when clicking nav button
   nav.find('a').on('click', function () {
     var $el = $(this);
       var id = $el.attr('href');
@@ -76,6 +73,7 @@ $( document ).ready(function() {
       return false;
   });
 
+  // scroll to portfolio section when clicking animated arrow in header
   $(".loader").on('click', function () {
     var $el = $(this);
       var id = $el.attr('href');
@@ -87,7 +85,7 @@ $( document ).ready(function() {
       return false;
   });
 
-
+  // scroll to top of page when clicking logo button
   $('a[href="#top"]').click(function() {
     var $el = $(this);
     var id = $el.attr('href');
@@ -100,36 +98,7 @@ $( document ).ready(function() {
       scrollTop: $(id).offset().top -500});
 
     return false;
-  })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // $(".project").mouseenter(function() {
-  //   $(this).css("flex", "2");
-  // })
-  // $(".project").mouseleave(function() {
-  //   $(this).css("flex", "1");
-  // })
-
-
-  //
-  // $(".project-cover").click(function() {
-  //   $(this).fadeToggle("slow", "linear");
-  //   $(this).css("display", "flex");
-  //   $(".projbox").slideDown("slow");
-  // })
-
+  });
 
 
 });

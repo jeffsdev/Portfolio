@@ -1,14 +1,3 @@
-.hborder {
-  content: "";
-  position: absolute;
-  top: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 10px;
-  width: 100px;
-  /* or 100px */
-  border-bottom: 3px solid #D68843; }
-
 html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
@@ -255,9 +244,8 @@ main {
   position: fixed;
   display: flex;
   width: 100%;
-  color: #fff;
   height: 50px;
-  display: flex;
+  color: #fff;
   justify-content: space-between;
   align-items: center;
   z-index: 99999999;
@@ -290,16 +278,13 @@ main {
         background: #444444; }
 
 .active {
-  transition: 0.5s;
+  transition: 0.6s;
   color: #00ff78; }
 
 .work-section {
   position: relative;
   padding: 0px 2%;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   color: #fff;
   text-align: center; }
   .work-section .portfolio-head {
@@ -429,23 +414,14 @@ main {
       flex: 1 1 50%;
       justify-content: space-between;
       margin: 0 0 1em 0; }
-      @media screen and (min-width: 400px) {
-        .about-section .skills ul {
-          margin: 0 0 1em 0; } }
       @media screen and (min-width: 400px) and (orientation: landscape) {
         .about-section .skills ul {
-          margin: 0 0 1em 0;
           flex: 1 25%; } }
-      @media screen and (min-width: 590px) {
-        .about-section .skills ul {
-          margin: 0 0 1em 0; } }
       @media screen and (min-width: 768px) {
         .about-section .skills ul {
-          margin: 0 0 1em 0;
           flex: 1 25%; } }
       @media screen and (min-width: 1024px) {
         .about-section .skills ul {
-          margin: 0 0 1em 0;
           flex: 1 15%; } }
       .about-section .skills ul:nth-child(6), .about-section .skills ul:nth-child(7) {
         flex: 2 20%; }
@@ -495,39 +471,19 @@ main {
     .other-skills p {
       margin: 1em 0; } }
 
-.about-slant {
-  width: 100%; }
-  .about-slant .slant {
-    height: 110px;
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: -5px; }
-    .about-slant .slant polygon {
-      fill: #111;
-      border: none;
-      stroke-width: 0; }
-
 .contact {
   display: flex;
   flex-wrap: wrap;
   color: #fff;
   text-align: center;
   height: calc(100vh - 50px);
-  background: #333;
   background-color: #000;
   background-image: url("../img/dark-pavement2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
-  animation: blah infinite;
   margin-bottom: -100px; }
-
-@keyframes blah {
-  0% {
-    background-position: top 0px; }
-  100% {
-    background-position: top 9000px; } }
   .contact .contact-head {
     display: flex;
     align-items: center;

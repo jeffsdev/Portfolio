@@ -63,22 +63,13 @@
       flex: 1 1 50%;
       justify-content: space-between;
       margin: 0 0 1em 0;
-      @media screen and #{$s-phone} {
-        margin: 0 0 1em 0;
-      }
       @media screen and #{$s-phone} and (orientation: landscape) {
-        margin: 0 0 1em 0;
         flex: 1 25%;
       }
-      @media screen and #{$s-tablet} {
-        margin: 0 0 1em 0;
-      }
       @media screen and #{$tablet} {
-        margin: 0 0 1em 0;
         flex: 1 25%;
       }
       @media screen and #{$desktop} {
-        margin: 0 0 1em 0;
         flex: 1 15%;
       }
       &:nth-child(6),
@@ -115,11 +106,6 @@
       width: 100%;
       min-width: 718px;
     }
-    .about-me {
-
-      // margin: 0 auto 0 50px;
-      // border: 1px solid blue;
-    }
   }
   @media screen and #{$tablet} {
     padding-bottom: 25px;
@@ -146,27 +132,6 @@
     }
     p {
       margin: 1em 0;
-    }
-  }
-}
-
-
-
-
-
-
-.about-slant {
-  width: 100%;
-  .slant {
-    height: 110px;
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: -5px;
-    // transform: rotateX(180deg);
-    polygon {
-      fill: $black;
-      border: none;
-      stroke-width: 0;
     }
   }
 }

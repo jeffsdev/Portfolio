@@ -16,23 +16,7 @@ $lightGreen: #00ff78;
 //Font Stacks
 $robotoStack: 'Roboto', sans-serif;
 
-//////////////////
-
-//Bottom borders under some h tags
-.hborder {
-  content : "";
-  position: absolute;
-  top: 28px;
-  left: 50%;
-  transform: translateX(-50%);
-  height  : 10px;
-  width   : 100px;  /* or 100px */
-  border-bottom: 3px solid $lightOrange;
-}
-
-
 /////////////////////////////////
-
 
 //Media Queries
 //Heights

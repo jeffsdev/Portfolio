@@ -4,21 +4,13 @@
   color: $white;
   text-align: center;
   height: calc(100vh - 50px);
-  background: #333;
   background-color: #000;
   background-image: url("../img/dark-pavement2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
-  animation: blah infinite;
   margin-bottom: -100px;
-  @keyframes blah {
-    0% {background-position: top 0px}
-    100% {background-position:  top 9000px;}
-  }
-  // align-content: center;
-
   .contact-head {
     display: flex;
     align-items: center;
@@ -33,7 +25,6 @@
       height: 200px;
     }
   }
-
   div {
     flex: 1 100%;
   }
