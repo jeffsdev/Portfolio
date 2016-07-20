@@ -1,0 +1,32 @@
+// portfolio item link buttons
+.portfolio-item {
+  .portfolio-item-details a {
+    display: inline-block;
+    color: $lightBlue;
+    border: 1px solid $lightBlue;
+    padding: 10px;
+    margin: 10px 10px;
+    &:hover,
+    &:active {
+      background: $lightBlue;
+      color: $black;
+    }
+
+  }
+}
+
+// download resume button
+.about-section {
+  .about-me a {
+    display: inline-block;
+    color: $lightGreen;
+    border: 1px solid $lightGreen;
+    float: right;
+    padding: 15px 20px;
+    &:hover,
+    &:active {
+      background: $lightGreen;
+      color: $black;
+    }
+  }
+}

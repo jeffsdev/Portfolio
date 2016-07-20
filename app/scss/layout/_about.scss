@@ -1,114 +1,137 @@
 .about-section {
-  padding: 50px 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background: $grayBlue;
+  background-image: url("../img/PortfolioBG-bw1.jpg");
+  background-position: -100px;
+  background-size: cover;
+  background-attachment: fixed;
   color: $white;
-  h2 {
-    text-align: center;
-    margin-bottom: 2em;
-    position: relative;
-    font-weight: 300;
-    &:after {
-      @extend .hborder;
+  padding: 0 2%;
+
+  .about-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    flex: 0 0 100%;
+    h1 {
+      font-size: 2.25em;
     }
   }
-  .avatar {
-    display: block;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: $lightGray;
-    margin: 0 auto 1em auto;
-    // border: 1px solid orange;
-  }
-  .about-me {
-    color: $white;
-    max-width: 600px;
-    margin: 0 auto 2em auto;
-    overflow: auto;
-    h4 {
-      margin-bottom: 1em;
-      font-weight: 300;
-      color: $lightBlue;
-    }
-    p {
-      margin-bottom: 1em;
-      line-height: 1.2;
-    }
-    a {
-      display: inline-block;
-      float: right;
-      border: 1px solid lime;
-      padding: 15px 20px;
-      border-radius: 2px;
-      &:hover {
-        border-color: lighten(lime, 25%);
+  // .avatar {
+  //   display: block;
+  //   width: 200px;
+  //   height: 200px;
+  //   border-radius: 50%;
+  //   background: $lightGray;
+  //   margin: 0 auto 1em auto;
+  // }
+  .about-top {
+    margin-left: auto;
+    .about-me {
+      color: $white;
+      max-width: 600px;
+      h4 {
+        margin: 1em 0;
+        font-weight: 300;
+        color: $lightBlue;
       }
+      p {
+        margin-bottom: 1em;
+        line-height: 1.5em;
+      }
+
     }
   }
   .skills {
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: auto;
-    // border: 1px solid blue;
+    margin: 25px auto 0 auto;
+    flex: 1 1 100%;
+    font-size: 14px;
     h3 {
       width: 100%;
       margin: 1em 0;
-      text-align: center;
+      text-align: left;
       font-weight: 300;
       color: $lightBlue;
     }
     ul {
-      // border: 1px solid red;
-      flex: 1 10%;
-      margin: 0 5px 1em 5px;
-      @media screen and #{$s-phone} {
-        margin: 0 10px 1em 10px;
-      }
-      @media screen and #{$s-tablet} {
-        margin: 0 30px 1em 30px;
+      flex: 1 1 50%;
+      justify-content: space-between;
+      margin: 0 0 1em 0;
+      @media screen and #{$s-phone} and (orientation: landscape) {
+        flex: 1 25%;
       }
       @media screen and #{$tablet} {
-        margin: 0 40px 1em 40px;
+        flex: 1 25%;
       }
       @media screen and #{$desktop} {
-        margin: 0 10px 1em 10px;
+        flex: 1 15%;
+      }
+      &:nth-child(6),
+      &:nth-child(7) {
+        flex: 2 20%;
+      }
+      &:nth-child(6) {
+        padding-right: 15px;
       }
     }
     li:first-child {
       font-weight: bold;
       margin-bottom: 1em;
     }
+    li {
+      line-height: 1.25em;
+    }
+    @media screen and #{$tablet} {
+      width: 75%;
+      min-width: 600px;
+    }
+    @media screen and #{$desktop} {
+      width: 100%;
+      max-width: 1200px;
+    }
   }
-  @media screen and(min-width: 768px) {
+  @media screen and #{$s-phone} and (orientation: landscape) {
+    background-position: left;
+  }
+  @media screen and #{$tablet} {
     .about-top {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: center;
       width: 100%;
       min-width: 718px;
-      max-width: 1200px;
-      margin: 50px auto;
-      // border: 1px solid red;
     }
-    .about-me {
-      margin: 0 auto 0 50px;
-      // border: 1px solid blue;
-    }
+  }
+  @media screen and #{$tablet} {
+    padding-bottom: 25px;
   }
 }
 
-
-.about-slant {
-  .slant {
-    height: 110px;
-    width: 100%;
-    margin-top: -5px;
-    // transform: rotateX(180deg);
-    polygon {
-      fill: $grayBlue;
-      border: none;
-      stroke-width: 0;
+.other-skills {
+  flex: 1 1 100%;
+  max-width: 800px;
+  margin: auto;
+  height: 100px;
+  span {
+    font-weight: 500;
+    margin-right: 1em;
+    display: block;
+    margin-bottom: 1em;
+  }
+  p {
+    margin: 1em 0;
+  }
+  @media screen and #{$tablet} {
+    span {
+      display: inline;
+    }
+    p {
+      margin: 1em 0;
     }
   }
 }

@@ -1,59 +1,78 @@
-.header-slant {
-  .slant {
-    margin-bottom: -5px;
-    height: 110px;
-    width: 100%;
-    margin-top: -150px;
-    transform: rotateX(180deg);
-    polygon {
-      fill: $black;
-      border: none;
-      stroke-width: 0;
-    }
-  }
-}
-
-
 .work-section {
   position: relative;
-  padding: 30px 30px 50px 30px;
+  padding: 0px 2%;
   width: 100%;
-  background: $black;
-  // background: linear-gradient(to bottom, #111111 0%,#404248 100%);
   color: $white;
   text-align: center;
-
-  h2 {
-    margin-bottom: 8px;
-  }
-  h4 {
-    position: relative;
-    font-weight: 300;
-    margin-bottom: 4em;
-    &:after {
-      @extend .hborder;
+  .portfolio-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    h1 {
+      font-size: 2.25em;
     }
+  }
+  .work-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $black;
+    height: 125px;
+    padding-bottom: 25px;
+    max-width: 75%;
+    margin: auto;
+    a {
+      color: $lightGreen;
+      &:hover {
+        color: lighten($lightGreen, 30%);
+      }
+    }
+    img {
+      max-width: 75px;
+      padding-left: 25px;
+      opacity: 0.25;
+    }
+    @media screen and #{$desktop} {
+      height: 150px;
+    }
+  }
+  @media screen and #{$desktop} {
+    padding: 0;
   }
 }
 
 
 .portfolio-item {
   width: 100%;
-  background: $black;
+  background: darken($gray, 50%);
+  background-color: #000000;
+  background-image: url("../img/shattered.png");
   margin: auto;
   margin-bottom: 25px;
+  max-width: 1400px;
+  font-size: 14px;
   .p-img {
     width: 100%;
     background: $gray;
-    @media screen and #{$desktop} {
-      width: 40%;
+    border-bottom: 1px solid $black;
+    @media screen and #{$s-phone} and (orientation: landscape) {
+      width: 50%;
       height: auto;
+      border: 1px solid $black;
+    }
+    @media screen and #{$desktop} {
+      width: 50%;
+      height: auto;
+      border: none;
+      border-right: 1px solid $black;
     }
   }
+
   .portfolio-item-details {
     margin-top: 5px;
     width: 100%;
-    background: $blackblack;
+    height: 100%;
     padding: 1em;
     p {
       margin: 1em;
@@ -61,41 +80,22 @@
     img {
       height: 25px;
     }
-    a {
-      display: inline-block;
-      color: $lightBlue;
-      border: 1px solid $lightBlue;
-      padding: 10px;
-      margin: 10px 10px;
-      &:hover {
-        background: $grayBlue;
-      }
-      &:active {
-        background: lighten($grayBlue, 20%);
-      }
-    }
+  }
+  @media screen and #{$s-phone} and (orientation: landscape) {
+    display: flex;
+    align-items: center;
+    border-right: 2px solid $lightBlue;
   }
   @media screen and #{$desktop} {
     display: flex;
     align-items: center;
-    background: $blackblack;
-    max-width:  1400px;
+    font-size: 1em;
     border-right: 2px solid $lightBlue;
   }
 }
 
-.comingsoon {
-  margin: 100px 0;
-  h3, h4 {
-    margin: 1em 0;
-  }
-  h4:after {
-    border:none;
-  }
-  a {
-    color: lime;
-    &:hover {
-      color: lighten(lime, 30%);
-    }
-  }
+
+
+.scroll-fadein {
+  opacity: 0;
 }

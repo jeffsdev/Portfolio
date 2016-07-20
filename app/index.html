@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jeff Seymour | Front-End Web Developer</title>
-    <meta name="description" content="Jeff Seymour. Front-End Web Developer. Portland, OR.  JavaScript, Ruby, HTML5, CSS3, Responsive Web Design. This is my portfolio.">
+    <title>Jeff Seymour | Front End Web Developer</title>
+    <meta name="description" content="Jeff Seymour. Front End Web Developer. Portland, OR.  JavaScript, Ruby, HTML5, CSS3, Responsive Web Design. This is my portfolio.">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <!--build:css css/main.min.css-->
     <link rel="stylesheet" href="css/main.css">
@@ -13,103 +13,105 @@
     <script src="js/lib/jquery-2.2.3.js"></script>
     <script src="js/scripts.js"></script>
     <!-- endbuild -->
-    <!-- GOOGLE ANALYTICS CODE -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-64204158-2', 'auto');
-      ga('send', 'pageview');
-
-    </script>
   </head>
   <body>
-    <nav class="navbar">
-      <a href="#top">JS</a>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#top">JS</a>
+        </div>
+        <div class="main-nav">
+          <a href="#work">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
     <header id="header" class="height-fix">
       <section id="top"></section>
       <div class="header-box">
-        <h1>Jeff Seymour</h1>
-        <span class="divider-blue"></span>
-        <h2>Front End</h2>
-        <h3>Web Developer</h3>
-        <span class="divider-blue"></span>
-        <h4>JavaScript &middot Ruby &middot HTML5 &middot CSS3 &middot Responsive Design</h4>
+        <h1>JEFF SEYMOUR</h1>
+        <!-- <span class="divider-blue"></span> -->
+        <h2>Front End Web Developer</h2>
+        <h3>HTML5 &middot; CSS3 &middot; JavaScript &middot; Ruby &middot; Responsive Web Design</h3>
       </div>
+      <a href="#work" class="loader">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </a>
     </header>
     <main class="sections">
-      <div class="header-slant">
-        <svg class="slant" viewBox="0 0 1 1" preserveAspectRatio="none">
-          <polygon points="0,0 0,1 1,0.5 1,0">
-        </svg>
-      </div>
       <section id="work" class="work-section">
-        <div class="loader">
-          <div class="block"></div>
-          <div class="block"></div>
-          <div class="block"></div>
+        <div class="portfolio-head">
+          <h1>PORTFOLIO</h1>
         </div>
-        <h2>WORK</h2>
-        <h4>Development & Design</h4>
-        <div class="portfolio-item">
+        <div class="portfolio-item scroll-fadein">
+          <img class="p-img" src="img/elixir-coffee.jpg" alt="elixir coffee">
+          <div class="portfolio-item-details">
+            <h3>Elixir Coffee</h3>
+            <p>Elixir Coffee is a website for a local (but fake) coffee shop that I created.</p>
+            <p>The website's layout and logo mockups I designed using Photoshop and Illustrator, which I then coded out.</p>
+            <img src="img/coding.png" alt="coding symbol">
+            <p>HTML5, CSS3/SCSS, JavaScript, jQuery</p>
+            <a href="http://www.elixir-coffee.jeffseymour.me" target="_blank">Visit Site</a>
+            <a href="https://github.com/jeffsdev/Elixir-Coffee" target="_blank">View on GitHub</a>
+          </div>
+          <div class="portfolio-item-shroud"></div>
+        </div>
+        <div class="portfolio-item scroll-fadein">
           <img class="p-img" src="img/pintme.jpg" alt="pint me webapp">
           <div class="portfolio-item-details">
             <h3>Pint Me!</h3>
             <p>An Angular 2 web app that dynamically displays kegs and their remaining pints.</p>
             <img src="img/ang2logo.png" alt="angular2 symbol">
             <p>Angular 2, TypeScript, SCSS, HTML5</p>
-            <!-- <a href="#">Live Demo</a> -->
             <a href="https://github.com/jeffsdev/js-Angular2-TapRoom" target="_blank">View on GitHub</a>
           </div>
+          <div class="portfolio-item-shroud"></div>
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item scroll-fadein">
           <img class="p-img" src="img/obelisk.jpg" alt="obelisk of wisdom webapp">
           <div class="portfolio-item-details">
             <h3>Obelisk of Wisdom</h3>
-            <p>A simple question and answer messageboard built with Ember 2 and Firebase.</p>
+            <p>A simple question and answer messageboard built with Ember 2. Firebase is used for a database to store question data and comments.</p>
             <img src="../img/emberlogo.png" alt="emberjs symbol">
             <p>Ember.js, JavaScript, SCSS, HTML5, Firebase</p>
-            <!-- <a href="#">Live Demo</a> -->
             <a href="https://github.com/jeffsdev/js-EmberJS-QA_MessageBoard" target="_blank">View on GitHub</a>
           </div>
+
         </div>
-        <div class="portfolio-item">
+        <div class="portfolio-item scroll-fadein">
           <img class="p-img" src="img/crate.jpg" alt="crate webapp">
           <div class="portfolio-item-details">
             <h3>CRATE</h3>
             <p>CRATE is a web application for collecting and organizing your personal record collection.</p>
-            <span>&lt; / &gt;</span>
-            <!-- <img src="img/ang2logo.png" alt="angular2 symbol"> -->
+            <img src="img/coding.png" alt="coding symbol">
             <p>PHP, jQuery, SCSS, HTML5, Discogs API</p>
-            <!-- <a href="#">Live Demo</a> -->
             <a href="https://github.com/jeffsdev/crate" target="_blank">View on GitHub</a>
           </div>
         </div>
-        <div class="comingsoon">
-          <h3>Live demos and more highlighted projects will be added soon!</h3>
-          <h4>View more of my projects on my <a href="https://github.com/jeffsdev" target="_blank">GitHub</a>.</h4>
+
+        <div class="work-footer">
+          <h4>View more of my projects and code on <a href="https://github.com/jeffsdev" target="_blank">GitHub</a>.</h4>
+          <img src="img/gh-icon.svg" alt="github icon">
         </div>
       </section>
 
       <section id="about" class="about-section">
-        <h2>About Me</h2>
+        <div class="about-head">
+          <h1>ABOUT ME</h1>
+        </div>
         <div class="about-top">
-          <img class="avatar" src="img/me.jpg" alt="avatar">
           <div class="about-me">
-            <h4>Hi, I'm Jeff!</h4>
-            <p>I am a Front End Web Developer from Portland, OR. For as far back as I can remember, I've had a passion for computers, technology, and the internet. After self-teaching myself programming and web development in my free time, I enrolled in Epicodus to further my coding skills. Programming has allowed me to stretch my creative mind in a new direction and give ideas an interactive and tangible life.</p>
-            <p>I have an insatiable appetite for learning and am always excited to enrich myself with new experiences.</p>
-            <a href="resources/Jeff_Seymour_Resume_2016.pdf" target="_blank">Download PDF Resume</a>
+            <h3>Hi, I'm Jeff!</h3>
+            <h4>I am a Front End Web Developer from Portland, OR.</h4>
+            <p>For as far back as I can remember, I've had a passion for computers, technology, and the internet. After teaching myself programming and web development in my free time, I enrolled in Epicodus to further my coding skills. Programming has allowed me to stretch my creative mind in an exciting new direction and give ideas an interactive and tangible life.</p>
+            <p>I have an insatiable appetite for learning and am always out to enrich myself with new challenges and experiences.</p>
+            <a href="resources/Jeff_Seymour_Resume_2016.pdf" target="_blank">Download PDF Resum&eacute;</a>
           </div>
+          <!-- <img class="avatar" src="img/me.jpg" alt="avatar"> -->
         </div>
         <div class="skills">
-          <h3>Skills & Technologies</h3>
+          <h3>Skills &amp; Technologies</h3>
           <ul>
             <li>HTML5</li>
           </ul>
@@ -124,50 +126,51 @@
           <ul>
             <li>JavaScript</li>
             <li>jQuery</li>
-            <li>Ember.js</li>
             <li>Angular 2</li>
-            <li>TypeScript</li>
+            <li>Ember.js</li>
             <li>Node.js</li>
             <li>Mocha</li>
             <li>Chai</li>
+            <li>Gulp / Bower / npm</li>
           </ul>
           <ul>
             <li>Ruby</li>
             <li>PostgreSQL</li>
-            <li>ActiveRecord</li>
+            <li>Active Record</li>
             <li>RSpec</li>
             <li>Sinatra</li>
           </ul>
           <ul>
-            <li>Development</li>
+            <li>Concepts &amp; Methodologies</li>
             <li>BDD/TDD (Test-Driven Development)</li>
             <li>Pair Programming</li>
             <li>Git / Version Control</li>
             <li>Command Line</li>
-            <li>Gulp / Bower / Browserify</li>
             <li>AJAX</li>
-            <li>Windows/Mac/Linux</li>
+            <li>RESTful API</li>
+            <li>MVC</li>
           </ul>
           <ul>
-            <li>Design</li>
-            <li>Adobe Creative Cloud</li>
+            <li>Web Design &amp; Software</li>
+            <li>Responsive Design</li>
+            <li>Mobile-First &amp; Atomic Design</li>
+            <li>UX/UI Design</li>
             <li>Adobe Photoshop</li>
             <li>Adobe Illustrator</li>
             <li>Sketch</li>
             <li>InVision</li>
-            <li>Responsive Web Design</li>
-            <li>UX/UI Design</li>
           </ul>
         </div>
+        <div class="other-skills">
+          <p><span>Currently having fun learning:</span> React / Redux</p>
+        </div>
       </section>
-      <div class="about-slant">
-        <svg class="slant" viewBox="0 0 1 1" preserveAspectRatio="none">
-          <polygon points="0,0 0,1 1,0.5 1,0">
-        </svg>
-      </div>
       <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <div>
+        <div class="contact-head">
+          <h1>LET'S WORK TOGETHER!</h1>
+        </div>
+        <div class="contact-box">
+          <p>I am currently looking for a Jr. Developer position.</p>
           <p>Get in touch with me!</p>
           <p>seym1585@gmail.com</p>
           <div class="social-icons">

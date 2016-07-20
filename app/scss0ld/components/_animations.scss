@@ -5,28 +5,17 @@ $block-initial: #000;
 $block-color: #bcf;
 $glow-color: #aaf;
 
-
-
-
 .loader {
   position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translate(-50%);
+  top: -80px;
+  left: 25px;
   display: flex;
-  min-height: 50px;
-  min-width: 50px;
-  padding: 20px;
-  z-index: 1;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
   animation: float 5s 3;
-  @media screen and #{$s-phone} and (orientation: landscape) {
-    bottom: 15px;
-  }
-  @media screen and #{$tablet} {
-    bottom: 100px;
-  }
+  z-index: 1;
 }
-
 
 .block {
   width: 10px;
@@ -42,13 +31,6 @@ $glow-color: #aaf;
   &:nth-child(2) {
     margin-top: 10px;
     animation-delay: 500ms;
-  }
-  @media screen and #{$tablet} {
-    width: 20px;
-    height: 20px;
-    &:nth-child(2) {
-      margin-top: 20px;
-    }
   }
 }
 

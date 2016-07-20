@@ -3,29 +3,44 @@
   flex-wrap: wrap;
   color: $white;
   text-align: center;
-  height: calc(100vh - 100px);
-  padding-top: 50px;
-  align-content: center;
-  h2 {
-    flex: 1 100%;
-    margin-bottom: 1em;
-    @media screen and #{$tablet} {
-      font-size: 3em;
+  height: calc(100vh - 50px);
+  background-color: #000;
+  background-image: url("../img/dark-pavement3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  margin-bottom: -100px;
+  .contact-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $black;
+    height: 150px;
+    flex: 0 0 100%;
+    h1 {
+      font-size: 2.25em;
+    }
+    @media screen and #{$desktop} {
+      height: 200px;
     }
   }
   div {
     flex: 1 100%;
   }
-  p {
-    margin-bottom: 1em;
-    @media screen and #{$tablet} {
-      font-size: 2em;
+  .contact-box {
+    p {
+      margin-bottom: 1em;
+      &:first-child {
+        color: $lightBlue;
+        font-weight: 500;
+        margin-bottom: 100px;
+      }
+      @media screen and #{$tablet} {
+        font-size: 2em;
+      }
     }
   }
-  // p:last-child {
-  //   flex: 1 100%;
-  //   font-size: 1em;
-  // }
 }
 
 .social-icons {
@@ -41,8 +56,13 @@
 }
 
 footer {
-  height: 51px;
-  color: white;
-  text-align: center;
-  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+
+  p {
+    color: white;
+    font-size: 0.8rem;
+  }
 }
