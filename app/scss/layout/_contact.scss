@@ -34,7 +34,9 @@
       &:first-child {
         color: $lightBlue;
         font-weight: 500;
-        margin-bottom: 100px;
+        margin: auto;
+        margin-bottom: 5%;
+        max-width: 75%;
       }
       @media screen and #{$tablet} {
         font-size: 2em;
