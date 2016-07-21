@@ -26,9 +26,6 @@
     height: 150px;
     max-height: 150px;
     flex: 0 0 100%;
-    h1 {
-      font-size: 2.25em;
-    }
     @media screen and #{$desktop} {
       height: 200px;
       max-height: 200px;

@@ -290,8 +290,6 @@ main {
     align-items: center;
     justify-content: center;
     height: 150px; }
-    .work-section .portfolio-head h1 {
-      font-size: 2.25em; }
   .work-section .work-footer {
     display: flex;
     align-items: center;
@@ -381,8 +379,6 @@ main {
     justify-content: center;
     height: 150px;
     flex: 0 0 100%; }
-    .about-section .about-head h1 {
-      font-size: 2.25em; }
   .about-section .about-top {
     margin-left: auto; }
     .about-section .about-top .about-me {
@@ -497,8 +493,6 @@ main {
     height: 150px;
     max-height: 150px;
     flex: 0 0 100%; }
-    .contact .contact-head h1 {
-      font-size: 2.25em; }
     @media screen and (min-width: 1024px) {
       .contact .contact-head {
         height: 200px;
