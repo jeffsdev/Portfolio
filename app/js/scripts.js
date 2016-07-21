@@ -43,7 +43,7 @@ $( document ).ready(function() {
 
     // fade in portfolio items when scrolling over them
     $('.scroll-fadein').each( function(i){
-      var bottom_of_item = $(this).offset().top + $(this).outerHeight() -100;
+      var bottom_of_item = $(this).offset().top + $(this).outerHeight() -200;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
 
     // initiate fade-in
