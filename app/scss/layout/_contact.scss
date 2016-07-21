@@ -30,11 +30,7 @@
       height: 200px;
       max-height: 200px;
     }
-    @media screen and (orientation: landscape) {
-
-    }
   }
-
 
   .contact-box {
     padding: 50px 0;
@@ -42,8 +38,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    // border: 1px solid red;
-    // height: calc(100% - 150px);
     @media screen and (orientation: landscape) {
       flex-direction: row;
       padding: 100px 0;
@@ -52,13 +46,11 @@
       flex-direction: column;
     }
     .contact-message {
-      // border: 1px solid lime;
       margin-bottom: 25px;
       color: $lightBlue;
       padding: 0 25px;
 
       h3 {
-        // font-size: 2em;
         line-height: 1.25em;
         @media screen and #{$tablet} {
           font-size: 2em;
@@ -72,7 +64,6 @@
     }
     .contact-details {
       flex: 1 1 100%;
-      // border: 1px solid purple;
       @media screen and #{$tablet} {
         flex: 0;
       }
