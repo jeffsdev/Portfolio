@@ -9,7 +9,7 @@ $( document ).ready(function() {
 
   // scroll and display effects
 
-  var sections = $('section');
+  var sections = $('.section');
   var nav = $('.main-nav');
   var nav_height = nav.outerHeight();
 
@@ -19,7 +19,7 @@ $( document ).ready(function() {
     var cur_pos = $(this).scrollTop();
 
     // change active classes
-    $('section').each(function(index, element) {
+    sections.each(function(index, element) {
   		if(st + navHeight > $(this).offset().top && st + navHeight  <= $(this).offset().top + $(this).height()  ){
         var id = $(this).attr('id');
 
@@ -95,7 +95,7 @@ $( document ).ready(function() {
     $el.addClass("active");
 
     $('html, body').animate({
-      scrollTop: $(id).offset().top -500});
+      scrollTop: $("#header").offset().top -500});
 
     return false;
   });
