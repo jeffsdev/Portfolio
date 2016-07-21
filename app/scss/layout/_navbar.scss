@@ -36,9 +36,6 @@
       &:hover {
         background: lighten($black, 10%);
       }
-      &:active {
-        background: lighten($black, 20%);
-      }
     }
   }
 }
