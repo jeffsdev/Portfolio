@@ -1,6 +1,4 @@
 .contact {
-  display: flex;
-  flex-wrap: wrap;
   color: $white;
   text-align: center;
   height: calc(100vh - 50px);
@@ -10,61 +8,116 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
-  margin-bottom: -100px;
+  min-height: 320px;
+  @media screen and (orientation: portrait) {
+    min-height: calc(100vh - 50px);
+  }
+  @media screen and (orientation: landscape) {
+    min-height: 480px;
+  }
+  @media screen and #{$desktop} {
+    height: calc(100vh -50px);
+  }
   .contact-head {
     display: flex;
     align-items: center;
     justify-content: center;
     background: $black;
     height: 150px;
+    max-height: 150px;
     flex: 0 0 100%;
     h1 {
       font-size: 2.25em;
     }
     @media screen and #{$desktop} {
       height: 200px;
+      max-height: 200px;
+    }
+    @media screen and (orientation: landscape) {
+
     }
   }
-  div {
-    flex: 1 100%;
-  }
+
+
   .contact-box {
-    p {
-      margin-bottom: 1em;
-      &:first-child {
-        color: $lightBlue;
-        font-weight: 500;
-        margin: auto;
-        margin-bottom: 5%;
-        max-width: 75%;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    // border: 1px solid red;
+    // height: calc(100% - 150px);
+    @media screen and (orientation: landscape) {
+      flex-direction: row;
+      padding: 100px 0;
+    }
+    @media screen and #{$tablet} {
+      flex-direction: column;
+    }
+    .contact-message {
+      // border: 1px solid lime;
+      margin-bottom: 25px;
+      color: $lightBlue;
+      padding: 0 25px;
+
+      h3 {
+        // font-size: 2em;
+        line-height: 1.25em;
+        @media screen and #{$tablet} {
+          font-size: 2em;
+          max-width: 50%;
+          margin: auto;
+        }
+        @media screen and #{$desktop} {
+          max-width: 100%;
+        }
       }
+    }
+    .contact-details {
+      flex: 1 1 100%;
+      // border: 1px solid purple;
       @media screen and #{$tablet} {
-        font-size: 2em;
+        flex: 0;
+      }
+      p {
+        flex: 1 1 100%;
+        margin-bottom: 1em;
+        font-size: 1.125em;
+        &:first-child {
+          font-weight: 500;
+          margin: auto;
+          margin-bottom: 25px;
+        }
+        @media screen and #{$tablet} {
+          font-size: 2em;
+        }
+      }
+      .social-icons {
+        margin: 0 auto;
+        a {
+          display: inline-block;
+          margin: 0 15px;
+          padding: 5px;
+        }
+        img {
+          width: 40px;
+        }
       }
     }
   }
 }
 
-.social-icons {
-  margin: 50px auto;
-  a {
-    display: inline-block;
-    margin: 0 15px;
-    padding: 5px;
-  }
-  img {
-    width: 40px;
-  }
-}
+
 
 footer {
+
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-
+  height: 50px;
+  margin-top: -50px;
   p {
-    color: white;
+    color: $lightGray;
     font-size: 0.8rem;
   }
 }
