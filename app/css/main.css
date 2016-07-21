@@ -274,8 +274,6 @@ main {
       font-size: 1em; }
       .navbar .main-nav a:hover {
         background: #2b2b2b; }
-      .navbar .main-nav a:active {
-        background: #444444; }
 
 .active {
   transition: 0.6s;
