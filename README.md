@@ -2,8 +2,8 @@
 ##### Jeff Seymour
 
 ### Description
-###### My front-end portfolio.  
-NOT COMPLETED YET!! Development in progress.
+#### This is my personal website and web developer portfolio.
+#### [View Site](http://www.jeffseymour.me)
 
 ### Installation
 Clone repository  
