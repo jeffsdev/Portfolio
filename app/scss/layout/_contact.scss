@@ -12,9 +12,6 @@
   @media screen and (orientation: portrait) {
     min-height: calc(100vh - 50px);
   }
-  @media screen and (orientation: landscape) {
-    min-height: 480px;
-  }
   @media screen and #{$desktop} {
     height: calc(100vh -50px);
   }
@@ -23,39 +20,34 @@
     align-items: center;
     justify-content: center;
     background: $black;
-    height: 150px;
+    height: 20%;
     max-height: 150px;
     flex: 0 0 100%;
-    @media screen and #{$desktop} {
-      height: 200px;
-      max-height: 200px;
-    }
+    margin-bottom: 3%;
   }
 
   .contact-box {
-    padding: 50px 0;
+    padding: 25px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    max-width: 768px;
+    margin: auto;
     @media screen and (orientation: landscape) {
       flex-direction: row;
-      padding: 100px 0;
     }
-    @media screen and #{$tablet} {
-      flex-direction: column;
+    @media screen and #{$l-desktop} {
+      max-width: 50%;
     }
     .contact-message {
       margin-bottom: 25px;
       color: $lightBlue;
       padding: 0 25px;
-
       h3 {
         line-height: 1.25em;
-        @media screen and #{$tablet} {
+        @media screen and #{$tablet} and #{$xs-mobile}{
           font-size: 2em;
-          max-width: 50%;
-          margin: auto;
         }
         @media screen and #{$desktop} {
           max-width: 100%;
@@ -64,9 +56,6 @@
     }
     .contact-details {
       flex: 1 1 100%;
-      @media screen and #{$tablet} {
-        flex: 0;
-      }
       p {
         flex: 1 1 100%;
         margin-bottom: 1em;
@@ -76,7 +65,7 @@
           margin: auto;
           margin-bottom: 25px;
         }
-        @media screen and #{$tablet} {
+        @media screen and #{$tablet} and #{$xs-mobile}{
           font-size: 2em;
         }
       }
