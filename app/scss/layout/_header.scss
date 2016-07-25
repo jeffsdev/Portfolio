@@ -14,29 +14,32 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
-  transition: 1s;
+  // transition: 0.3s;
   .header-box {
     width: 80%;
     color: $lightGray;
     padding: 3%;
     text-align: center;
+    margin: auto;
     transition: 1s;
-    .divider-blue {
-      display: block;
-      margin: 8px auto;
-      width: 200px;
-      height: 3px;
-      background: $lightBlue;
-      @media screen and #{$tablet} {
-        margin: 16px auto;
-      }
-    }
     h1 {
       font-weight: 700;
-      @media screen and #{$tablet} {
+      text-align: center;
+      margin: auto;
+      @media screen and #{$tablet} and #{$xs-mobile}{
+        font-size: 4em;
+      }
+      @media screen and #{$l-desktop}{
         font-size: 6em;
-        text-align: center;
-        margin: auto;
+      }
+      @media screen and #{$l-mobile} and #{$s-tablet}{
+        font-size: 6em;
+      }
+      @media screen and #{$tablet} and #{$xs-mobile}{
+
+      }
+      @media screen and #{$l-desktop}{
+
       }
     }
     h2 {
@@ -44,7 +47,20 @@ header {
       font-weight: 700;
       font-size: 1.5em;
       margin-top: 8px;
-      @media screen and #{$tablet} {
+      margin-bottom: 3%;
+      // @media screen and #{$s-tablet} and #{$s-mobile}{
+      //   font-size: 2.5em;
+      // }
+      @media screen and #{$xs-mobile} {
+        margin-bottom: 10%;
+      }
+      @media screen and #{$tablet} and #{$xs-mobile}{
+        font-size: 2em;
+      }
+      @media screen and #{$l-desktop}{
+        font-size: 2.5em;
+      }
+      @media screen and #{$l-mobile} and #{$s-tablet}{
         font-size: 2.5em;
       }
     }
@@ -52,11 +68,7 @@ header {
       font-size: 1em;
       font-weight: 300;
       color: #00ff78;
-      margin-top: 35%;
-      @media screen and #{$s-phone} and (orientation: landscape) {
-        margin-top: 10%;
-      }
-      @media screen and #{$tablet} {
+      @media screen and #{$tablet} and #{$s-mobile}{
         font-size: 1.25em;
       }
     }

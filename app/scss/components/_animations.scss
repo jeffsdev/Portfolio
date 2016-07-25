@@ -22,7 +22,7 @@ $glow-color: #aaf;
   @media screen and #{$s-phone} and (orientation: landscape) {
     bottom: 15px;
   }
-  @media screen and #{$tablet} {
+  @media screen and #{$tablet} and #{$s-mobile}{
     bottom: 100px;
   }
 }
@@ -43,7 +43,7 @@ $glow-color: #aaf;
     margin-top: 10px;
     animation-delay: 500ms;
   }
-  @media screen and #{$tablet} {
+  @media screen and #{$tablet} and #{$s-mobile}{
     width: 20px;
     height: 20px;
     &:nth-child(2) {
