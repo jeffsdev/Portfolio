@@ -14,7 +14,6 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: left;
-  // transition: 0.3s;
   .header-box {
     width: 80%;
     color: $lightGray;
@@ -35,12 +34,6 @@ header {
       @media screen and #{$l-mobile} and #{$s-tablet}{
         font-size: 6em;
       }
-      @media screen and #{$tablet} and #{$xs-mobile}{
-
-      }
-      @media screen and #{$l-desktop}{
-
-      }
     }
     h2 {
       color: $lightBlue;
@@ -48,9 +41,6 @@ header {
       font-size: 1.5em;
       margin-top: 8px;
       margin-bottom: 3%;
-      // @media screen and #{$s-tablet} and #{$s-mobile}{
-      //   font-size: 2.5em;
-      // }
       @media screen and #{$xs-mobile} {
         margin-bottom: 10%;
       }
