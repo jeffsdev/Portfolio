@@ -96,3 +96,55 @@
 .scroll-fadein {
   opacity: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#projects-container {
+  display: flex;
+  border: 1px solid red;
+  background: #559;
+
+  .projects-list {
+    background: #444;
+    border: 2px solid green;
+    max-width: 300px;
+    flex: 1;
+  }
+
+  .projects-area {
+    background: #432;
+    border: 2px solid purple;
+    flex: 2;
+  }
+
+
+
+  #individual-projects {
+    display: none;
+  }
+
+}

@@ -101,4 +101,60 @@ $( document ).ready(function() {
   });
 
 
+
+  // New Project Area Code
+
+
+
+
+
+  $('.project-tab').click(function(){
+    if ( $(this).attr("id") === "all" )  {
+      $('#individual-projects').hide();
+      $("#project-gallery").fadeIn(500);
+
+    } else {
+      $("#project-gallery").hide();
+      $('#individual-projects').fadeIn(500);
+    // $('.project-gallery').hide()
+      // $list = jQuery(this);
+      // var list_id = parseInt($list.attr('id').replace('list', ''), 10);
+      // var $projects = $('.projects');
+       var dig1 = $(this).attr("id").slice(4,6);
+   console.log(dig1);
+
+      $('.projects').each(function(){
+        // $div = jQuery(this);
+        // var div_id = parseInt($div.attr('id').replace('project', ''), 10);
+        var dig2 = $(this).attr("id").slice(7,9);
+   console.log(dig2);
+  //selectedDiv only fires after .hide is fully executed
+        $(this).hide().promise().done(function(){
+          if (dig1 === dig2) {
+            var $selectedDiv = jQuery(this);
+            $selectedDiv.fadeIn(500);
+          }
+      });
+    });
+    }
+  });
+    // event.preventDefault();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

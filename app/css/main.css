@@ -365,6 +365,22 @@ main {
 .scroll-fadein {
   opacity: 0; }
 
+#projects-container {
+  display: flex;
+  border: 1px solid red;
+  background: #559; }
+  #projects-container .projects-list {
+    background: #444;
+    border: 2px solid green;
+    max-width: 300px;
+    flex: 1; }
+  #projects-container .projects-area {
+    background: #432;
+    border: 2px solid purple;
+    flex: 2; }
+  #projects-container #individual-projects {
+    display: none; }
+
 .about-section {
   display: flex;
   flex-wrap: wrap;
