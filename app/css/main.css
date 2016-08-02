@@ -98,6 +98,16 @@ img {
     background: #abf;
     color: #111; }
 
+.projects .project-details aside a {
+  display: inline-block;
+  color: #abf;
+  border: 1px solid #abf;
+  padding: 10px;
+  margin: 10px 10px; }
+  .projects .project-details aside a:hover, .projects .project-details aside a:active {
+    background: #abf;
+    color: #111; }
+
 .about-section .about-me a {
   display: inline-block;
   color: #00ff78;
@@ -287,12 +297,14 @@ main {
   padding: 0px 2%;
   width: 100%;
   color: #fff;
+  background: #667;
   text-align: center; }
   .work-section .portfolio-head {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px; }
+    height: 150px;
+    background: #111; }
   .work-section .work-footer {
     display: flex;
     align-items: center;
@@ -300,7 +312,6 @@ main {
     background: #111;
     height: 125px;
     padding-bottom: 25px;
-    max-width: 75%;
     margin: auto; }
     .work-section .work-footer a {
       color: #00ff78; }
@@ -368,38 +379,64 @@ main {
 #projects-container {
   display: flex;
   border: 1px solid red;
-  background: #559; }
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
+  background-attachment: fixed;
+  min-height: 1000px; }
   #projects-container .projects-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #444;
+    background: rgba(0, 0, 0, 0.5);
     border: 2px solid green;
     max-width: 300px;
     flex: 1;
-    padding: 25px 0; }
+    padding: 50px 0; }
     #projects-container .projects-list li {
       width: 75%;
-      margin: 1% 0;
+      margin-bottom: 2%;
       padding: 20px 0;
       background: #333; }
   #projects-container .projects-area {
-    background: #432;
     border: 2px solid purple;
     flex: 2; }
   #projects-container #project-gallery {
     justify-content: center;
     display: flex;
-    padding: 25px 0;
+    padding: 50px 0;
     flex-wrap: wrap; }
     #projects-container #project-gallery img {
       align-self: center;
       max-width: 30%;
-      margin: 1%;
+      margin: 0 1% 1% 1%;
       height: auto;
       display: block; }
   #projects-container #individual-projects {
-    display: none; }
+    display: none;
+    padding: 50px 0; }
+    #projects-container #individual-projects .projects .project-details {
+      border: 2px solid orange;
+      display: flex; }
+      #projects-container #individual-projects .projects .project-details .project-meta {
+        flex: 2; }
+        #projects-container #individual-projects .projects .project-details .project-meta img {
+          max-width: 75%;
+          border: 2px solid #111; }
+        #projects-container #individual-projects .projects .project-details .project-meta p {
+          max-width: 75%;
+          margin: auto; }
+        #projects-container #individual-projects .projects .project-details .project-meta h3 {
+          font-size: 2.25em;
+          margin: 1em; }
+      #projects-container #individual-projects .projects .project-details aside {
+        border: 2px solid lime;
+        flex: 1;
+        max-width: 300px; }
+        #projects-container #individual-projects .projects .project-details aside img {
+          max-width: 25%;
+          margin: 1em 0; }
+        #projects-container #individual-projects .projects .project-details aside .techused-list li {
+          margin-bottom: 1em; }
 
 .about-section {
   display: flex;

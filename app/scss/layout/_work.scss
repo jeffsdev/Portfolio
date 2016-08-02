@@ -3,12 +3,14 @@
   padding: 0px 2%;
   width: 100%;
   color: $white;
+  background: #667;
   text-align: center;
   .portfolio-head {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 150px;
+    background: $black;
   }
   .work-footer {
     display: flex;
@@ -17,7 +19,7 @@
     background: $black;
     height: 125px;
     padding-bottom: 25px;
-    max-width: 75%;
+    // max-width: 75%;
     margin: auto;
     a {
       color: $lightGreen;
@@ -126,27 +128,30 @@
 #projects-container {
   display: flex;
   border: 1px solid red;
-  background: #559;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
+  background-attachment: fixed;
+  min-height: 1000px;
 
   .projects-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #444;
+    background: rgba(0, 0, 0, 0.5);
     border: 2px solid green;
     max-width: 300px;
     flex: 1;
-    padding: 25px 0;
+    padding: 50px 0;
     li {
       width: 75%;
-      margin: 1% 0;
+      margin-bottom: 2%;
       padding: 20px 0;
       background: #333;
     }
   }
 
   .projects-area {
-    background: #432;
+    // background: #432;
     border: 2px solid purple;
     flex: 2;
   }
@@ -154,12 +159,12 @@
   #project-gallery {
     justify-content: center;
     display: flex;
-    padding: 25px 0;
+    padding: 50px 0;
     flex-wrap: wrap;
     img {
       align-self: center;
       max-width: 30%;
-      margin:  1%;
+      margin:  0 1% 1% 1%;
       height: auto;
       display: block;
     }
@@ -167,6 +172,43 @@
 
   #individual-projects {
     display: none;
+    padding: 50px 0;
+    .projects {
+
+      .project-details {
+        border: 2px solid orange;
+        display: flex;
+        .project-meta {
+          flex: 2;
+          img {
+            max-width: 75%;
+            border: 2px solid $black;
+          }
+          p {
+            max-width: 75%;
+            margin: auto;
+          }
+          h3 {
+            font-size: 2.25em;
+            margin: 1em;
+          }
+
+        }
+
+        aside {
+          border: 2px solid lime;
+          flex: 1;
+          max-width: 300px;
+          img {
+            max-width: 25%;
+            margin: 1em 0;
+          }
+          .techused-list li {
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
   }
 
 }
