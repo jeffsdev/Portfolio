@@ -294,7 +294,6 @@ main {
 
 .work-section {
   position: relative;
-  padding: 0px 2%;
   width: 100%;
   color: #fff;
   background: #667;
@@ -378,7 +377,6 @@ main {
 
 #projects-container {
   display: flex;
-  border: 1px solid red;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
   background-attachment: fixed;
@@ -387,19 +385,24 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid green;
     max-width: 300px;
+    min-width: 100px;
     flex: 1;
-    padding: 50px 0; }
+    padding: 50px 0;
+    padding-right: 2%;
+    background: rgba(100, 100, 100, 0.1); }
     #projects-container .projects-list li {
-      width: 75%;
-      margin-bottom: 2%;
+      width: 100%;
+      margin-bottom: 5%;
       padding: 20px 0;
-      background: #333; }
+      background: #333;
+      background: rgba(0, 0, 0, 0.5);
+      border-left: 2px solid #abf; }
+      #projects-container .projects-list li.active {
+        border-color: #00ff78; }
   #projects-container .projects-area {
-    border: 2px solid purple;
-    flex: 2; }
+    flex: 2;
+    padding: 0 2%; }
   #projects-container #project-gallery {
     justify-content: center;
     display: flex;
@@ -415,23 +418,28 @@ main {
     display: none;
     padding: 50px 0; }
     #projects-container #individual-projects .projects .project-details {
-      border: 2px solid orange;
-      display: flex; }
+      display: flex;
+      flex-direction: column;
+      font-size: 14px; }
       #projects-container #individual-projects .projects .project-details .project-meta {
         flex: 2; }
         #projects-container #individual-projects .projects .project-details .project-meta img {
-          max-width: 75%;
+          max-width: 100%;
           border: 2px solid #111; }
         #projects-container #individual-projects .projects .project-details .project-meta p {
-          max-width: 75%;
-          margin: auto; }
+          max-width: 100%;
+          margin: auto;
+          margin-bottom: 1em; }
+          #projects-container #individual-projects .projects .project-details .project-meta p:last-child {
+            margin-bottom: 50px; }
         #projects-container #individual-projects .projects .project-details .project-meta h3 {
-          font-size: 2.25em;
+          font-size: 1.5em;
           margin: 1em; }
       #projects-container #individual-projects .projects .project-details aside {
-        border: 2px solid lime;
         flex: 1;
         max-width: 300px; }
+        #projects-container #individual-projects .projects .project-details aside h4 {
+          font-size: 1.125em; }
         #projects-container #individual-projects .projects .project-details aside img {
           max-width: 25%;
           margin: 1em 0; }
