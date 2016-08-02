@@ -109,6 +109,10 @@ $( document ).ready(function() {
 
 
   $('.project-tab').click(function(){
+    $(".project-tab").removeClass("active");
+    $(this).addClass("active");
+
+
     if ( $(this).attr("id") === "all" )  {
       $('#individual-projects').hide();
       $("#project-gallery").fadeIn(500);

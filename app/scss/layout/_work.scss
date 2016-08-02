@@ -129,10 +129,20 @@
   background: #559;
 
   .projects-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #444;
     border: 2px solid green;
     max-width: 300px;
     flex: 1;
+    padding: 25px 0;
+    li {
+      width: 75%;
+      margin: 1% 0;
+      padding: 20px 0;
+      background: #333;
+    }
   }
 
   .projects-area {
@@ -141,7 +151,19 @@
     flex: 2;
   }
 
-
+  #project-gallery {
+    justify-content: center;
+    display: flex;
+    padding: 25px 0;
+    flex-wrap: wrap;
+    img {
+      align-self: center;
+      max-width: 30%;
+      margin:  1%;
+      height: auto;
+      display: block;
+    }
+  }
 
   #individual-projects {
     display: none;
