@@ -98,13 +98,13 @@ img {
     background: #abf;
     color: #111; }
 
-.projects .project-details aside a {
+.projects .project-details a {
   display: inline-block;
   color: #abf;
   border: 1px solid #abf;
   padding: 10px;
   margin: 10px 10px; }
-  .projects .project-details aside a:hover, .projects .project-details aside a:active {
+  .projects .project-details a:hover, .projects .project-details a:active {
     background: #abf;
     color: #111; }
 
@@ -310,7 +310,7 @@ main {
     justify-content: center;
     background: #111;
     height: 125px;
-    padding-bottom: 25px;
+    padding: 25px 0;
     margin: auto; }
     .work-section .work-footer a {
       color: #00ff78; }
@@ -380,7 +380,7 @@ main {
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
   background-attachment: fixed;
-  min-height: 1000px; }
+  min-height: 500px; }
   #projects-container .projects-list {
     display: flex;
     flex-direction: column;
@@ -388,7 +388,7 @@ main {
     max-width: 300px;
     min-width: 100px;
     flex: 1;
-    padding: 50px 0;
+    padding: 50px 2%;
     padding-right: 2%;
     background: rgba(100, 100, 100, 0.1); }
     #projects-container .projects-list li {
@@ -408,10 +408,27 @@ main {
     display: flex;
     padding: 50px 0;
     flex-wrap: wrap; }
+    #projects-container #project-gallery .p-thumbnail {
+      position: relative;
+      margin: 0 0% 5% 0%; }
+      #projects-container #project-gallery .p-thumbnail span {
+        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 40%);
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        padding: 10% 0 3% 0;
+        font-size: 14px; }
+      @media screen and (min-width: 1024px) {
+        #projects-container #project-gallery .p-thumbnail {
+          max-width: 48%; }
+          #projects-container #project-gallery .p-thumbnail:nth-child(odd) {
+            margin-right: 1%; }
+          #projects-container #project-gallery .p-thumbnail:nth-child(even) {
+            margin-left: 1%; } }
     #projects-container #project-gallery img {
       align-self: center;
       max-width: 100%;
-      margin: 0 0% 5% 0%;
       height: auto;
       display: block;
       border: 2px solid #111; }
@@ -425,27 +442,60 @@ main {
       #projects-container #individual-projects .projects .project-details .project-meta {
         flex: 2; }
         #projects-container #individual-projects .projects .project-details .project-meta img {
+          display: block;
+          margin: auto;
+          width: 100%;
           max-width: 100%;
+          margin-bottom: 1em;
           border: 2px solid #111; }
+          @media screen and (min-width: 1024px) {
+            #projects-container #individual-projects .projects .project-details .project-meta img {
+              max-width: 1024px; } }
         #projects-container #individual-projects .projects .project-details .project-meta p {
           max-width: 100%;
           margin: auto;
           margin-bottom: 1em; }
-          #projects-container #individual-projects .projects .project-details .project-meta p:last-child {
-            margin-bottom: 50px; }
         #projects-container #individual-projects .projects .project-details .project-meta h3 {
           font-size: 1.5em;
-          margin: 1em; }
+          margin: 10px 0;
+          display: inline-block;
+          vertical-align: middle;
+          width: 100%; }
+          @media screen and (min-width: 590px) {
+            #projects-container #individual-projects .projects .project-details .project-meta h3 {
+              font-size: 2.25em; } }
+        #projects-container #individual-projects .projects .project-details .project-meta a {
+          margin-top: 1em;
+          margin-bottom: 25px; }
       #projects-container #individual-projects .projects .project-details aside {
         flex: 1;
-        max-width: 300px; }
+        margin-top: 25px;
+        width: 100%; }
         #projects-container #individual-projects .projects .project-details aside h4 {
-          font-size: 1.125em; }
+          font-size: 1.125em;
+          margin-bottom: 10px; }
         #projects-container #individual-projects .projects .project-details aside img {
-          max-width: 25%;
-          margin: 1em 0; }
+          max-width: 20%;
+          margin: 10px 0; }
+        #projects-container #individual-projects .projects .project-details aside .techused-list {
+          width: 25%;
+          display: inline; }
         #projects-container #individual-projects .projects .project-details aside .techused-list li {
           margin-bottom: 1em; }
+        #projects-container #individual-projects .projects .project-details aside a {
+          display: inline-block; }
+        @media screen and (min-width: 1024px) {
+          #projects-container #individual-projects .projects .project-details aside {
+            max-width: 300px;
+            margin-top: 0;
+            font-size: 1em; } }
+      @media screen and (min-width: 590px) {
+        #projects-container #individual-projects .projects .project-details {
+          font-size: 1em; } }
+      @media screen and (min-width: 1024px) {
+        #projects-container #individual-projects .projects .project-details {
+          flex-direction: row;
+          font-size: 1em; } }
 
 .about-section {
   display: flex;
