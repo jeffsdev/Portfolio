@@ -122,9 +122,6 @@
 
 
 
-
-
-
 #projects-container {
   display: flex;
   // border: 1px solid red;
@@ -171,10 +168,11 @@
     flex-wrap: wrap;
     img {
       align-self: center;
-      max-width: 30%;
-      margin:  0 1% 1% 1%;
+      max-width: 100%;
+      margin:  0 0% 5% 0%;
       height: auto;
       display: block;
+      border: 2px solid $black;      
     }
   }
 
