@@ -59,9 +59,9 @@ a {
 }
 
 p {
+    line-height: 1.5em;
   @media screen and #{$desktop} {
     font-size: 18px;
-    line-height: 1.5em;
   }
 }
 

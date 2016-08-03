@@ -148,6 +148,11 @@
       background: #333;
       background: rgba(0, 0, 0, 0.5);
       border-left: 2px solid $lightBlue;
+      &:first-child {
+        margin-bottom: 15%;
+        border-left: none;
+        border-bottom: 2px solid $lightBlue;
+      }
       &.active {
         border-color: $lightGreen;
       }
@@ -257,7 +262,7 @@
             margin-bottom: 1em;
             border: 2px solid $black;
             @media screen and #{$desktop} {
-              max-width: 1024px;
+              max-width: 900px;
             }
           }
           p {

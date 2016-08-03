@@ -65,10 +65,11 @@ button {
 a {
   text-decoration: none; }
 
-@media screen and (min-width: 1024px) {
-  p {
-    font-size: 18px;
-    line-height: 1.5em; } }
+p {
+  line-height: 1.5em; }
+  @media screen and (min-width: 1024px) {
+    p {
+      font-size: 18px; } }
 
 button {
   overflow: visible;
@@ -398,6 +399,10 @@ main {
       background: #333;
       background: rgba(0, 0, 0, 0.5);
       border-left: 2px solid #abf; }
+      #projects-container .projects-list li:first-child {
+        margin-bottom: 15%;
+        border-left: none;
+        border-bottom: 2px solid #abf; }
       #projects-container .projects-list li.active {
         border-color: #00ff78; }
       #projects-container .projects-list li:hover {
@@ -483,7 +488,7 @@ main {
           border: 2px solid #111; }
           @media screen and (min-width: 1024px) {
             #projects-container #individual-projects .projects .project-details .project-meta img {
-              max-width: 1024px; } }
+              max-width: 900px; } }
         #projects-container #individual-projects .projects .project-details .project-meta p {
           max-width: 100%;
           margin: auto;

@@ -171,9 +171,29 @@ $( document ).ready(function() {
 
 
 
+    // scroll to portfolio section when clicking animated arrow in header
+    $(".project-tab").on('click', function () {
 
+      var headheight = $(".portfolio-head").height();
 
+      $('html, body').animate({
+        scrollTop: $("#work").offset().top + headheight - nav_height +1
+      }, 500);
 
+      return false;
+    });
+
+    // scroll to portfolio section when clicking animated arrow in header
+    $(".p-thumbnail").on('click', function () {
+
+      var headheight = $(".portfolio-head").height();
+
+      $('html, body').animate({
+        scrollTop: $("#work").offset().top + headheight - nav_height +1
+      }, 250);
+
+      return false;
+    });
 
 
 
