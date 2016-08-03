@@ -67,7 +67,7 @@ $( document ).ready(function() {
       var id = $el.attr('href');
 
       $('html, body').animate({
-        scrollTop: $(id).offset().top - nav_height +1
+        scrollTop: $(id).offset().top - nav_height +2
       }, 500);
 
       return false;
