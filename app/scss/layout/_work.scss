@@ -47,7 +47,7 @@
 #projects-container {
   display: flex;
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
+  background-image: url("../img/shattered-dark.png");
   background-attachment: fixed;
   min-height: 500px;
 
@@ -144,7 +144,7 @@
         transition: 0.5s;
         transform: translateY(0%);
         border-bottom: 2px solid $black;
-        border-top: 2px solid $black;        
+        border-top: 2px solid $black;
         }
       }
       @media screen and #{$desktop} {

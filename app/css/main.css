@@ -333,7 +333,7 @@ main {
 #projects-container {
   display: flex;
   background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
+  background-image: url("../img/shattered-dark.png");
   background-attachment: fixed;
   min-height: 500px; }
   #projects-container .projects-list {
