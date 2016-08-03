@@ -41,16 +41,16 @@ $( document ).ready(function() {
       nav.find('a[href="#contact"]').addClass('active');
     }
 
-    // fade in portfolio items when scrolling over them
-    $('.scroll-fadein').each( function(i){
-      var bottom_of_item = $(this).offset().top + $(this).outerHeight() -200;
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-    // initiate fade-in
-      if( bottom_of_window > bottom_of_item ){
-        $(this).animate({'opacity':'1'},500);
-      }
-    });
+    // // fade in portfolio items when scrolling over them
+    // $('.scroll-fadein').each( function(i){
+    //   var bottom_of_item = $(this).offset().top + $(this).outerHeight() -200;
+    //   var bottom_of_window = $(window).scrollTop() + $(window).height();
+    //
+    // // initiate fade-in
+    //   if( bottom_of_window > bottom_of_item ){
+    //     $(this).animate({'opacity':'1'},500);
+    //   }
+    // });
 
     // add backgroudn to nav once it hits portfolio section
     if (cur_pos > window.innerHeight -50) {
@@ -101,18 +101,43 @@ $( document ).ready(function() {
   });
 
 
-
   // New Project Area Code
 
 
+  // scroll to top of portfolio gallery when clicking project tab
+  $(".project-tab").on('click', function () {
+
+    var headheight = $(".portfolio-head").height();
+
+    $('html, body').animate({
+      scrollTop: $("#work").offset().top + headheight - nav_height +1
+    }, 500);
+
+    return false;
+  });
+
+  // scroll to top of portfolio gallery when clicking on project thumbnail
+  $(".p-thumbnail").on('click', function () {
+
+    var headheight = $(".portfolio-head").height();
+
+    $('html, body').animate({
+      scrollTop: $("#work").offset().top + headheight - nav_height +1
+    }, 250);
+
+    return false;
+  });
 
 
 
+  // Functionality for clicking on project item tabs
   $('.project-tab').click(function(){
+
     $(".project-tab").removeClass("active");
     $(this).addClass("active");
 
-
+    // if user clicks on "all projects", hide individual project
+    // and show project gallery. Otherwise, change project.
     if ( $(this).attr("id") === "all" )  {
       $('#individual-projects').hide();
       $("#project-gallery").fadeIn(300);
@@ -121,91 +146,42 @@ $( document ).ready(function() {
       $("#project-gallery").hide();
       $('#individual-projects').fadeIn(300);
 
-       var dig1 = $(this).attr("id").slice(4,6);
-  //  console.log(dig1);
+      var tab_id = $(this).attr("id").slice(4,6); // tab number
 
       $('.projects').each(function(){
-
-        var dig2 = $(this).attr("id").slice(7,9);
-  //  console.log(dig2);
+        var project_id = $(this).attr("id").slice(7,9); // project number
 
         $(this).hide().promise().done(function(){
-          if (dig1 === dig2) {
+          if (tab_id === project_id) {
             var $selectedDiv = jQuery(this);
             $selectedDiv.fadeIn(300);
           }
-      });
-    });
-    }
-  });
-    // event.preventDefault();
-
-
-
-
-
-    $('.p-thumbnail').click(function() {
-      $('#project-gallery').hide();
-      $('#individual-projects').fadeIn(300);
-
-
-      var dig3 = $(this).attr('id').slice(9,11);
-        // console.log(dig3 + " dig3")
-
-      var tab_id = "#item" + dig3;
-      $(".project-tab").removeClass("active");
-      $(tab_id).addClass("active");
-
-      $('.projects').each(function() {
-        var dig2 = $(this).attr("id").slice(7,9);
-          // console.log(dig2 + " dig2")
-          $(this).hide().promise().done(function(){
-            if (dig2 === dig3) {
-              $(this).fadeIn(300);
-            }
         });
       });
+    }
+  });
+
+  // Functionality for clicking on project gallery thumbnails
+  $('.p-thumbnail').click(function() {
+    $('#project-gallery').hide();
+    $('#individual-projects').fadeIn(300);
+
+    var thumbnail_id = $(this).attr('id').slice(9,11); // project gallery thumbnail number
+    var tab_id = "#item" + thumbnail_id;
+
+    $(".project-tab").removeClass("active");
+    $(tab_id).addClass("active");
+
+    $('.projects').each(function() {
+      var project_id = $(this).attr("id").slice(7,9); // project number
+
+      $(this).hide().promise().done(function(){
+        if (project_id === thumbnail_id) {
+          $(this).fadeIn(300);
+        }
+      });
     });
-
-
-
-
-
-    // scroll to portfolio section when clicking animated arrow in header
-    $(".project-tab").on('click', function () {
-
-      var headheight = $(".portfolio-head").height();
-
-      $('html, body').animate({
-        scrollTop: $("#work").offset().top + headheight - nav_height +1
-      }, 500);
-
-      return false;
-    });
-
-    // scroll to portfolio section when clicking animated arrow in header
-    $(".p-thumbnail").on('click', function () {
-
-      var headheight = $(".portfolio-head").height();
-
-      $('html, body').animate({
-        scrollTop: $("#work").offset().top + headheight - nav_height +1
-      }, 250);
-
-      return false;
-    });
-
-
-
-
-
-
-
-
-
-
-
-
+  });
 
 
 });
