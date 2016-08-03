@@ -353,7 +353,8 @@ main {
       background: #333;
       background: rgba(0, 0, 0, 0.5);
       border-left: 2px solid #abf;
-      transition: 0.3s; }
+      transition: 0.3s;
+      box-shadow: 3px 3px 3px #222; }
       #projects-container .projects-list li:first-child {
         margin-bottom: 15%;
         border-left: none;
@@ -374,7 +375,8 @@ main {
     #projects-container #project-gallery .p-thumbnail {
       position: relative;
       margin: 0 0% 5% 0%;
-      overflow: hidden; }
+      overflow: hidden;
+      box-shadow: 3px 3px 3px #222; }
       #projects-container #project-gallery .p-thumbnail .project-brief {
         overflow: hidden;
         width: 100%;
@@ -410,7 +412,9 @@ main {
         #projects-container #project-gallery .p-thumbnail:hover .project-brief {
           background: rgba(200, 200, 200, 0.9);
           transition: 0.5s;
-          transform: translateY(0%); }
+          transform: translateY(0%);
+          border-bottom: 2px solid #111;
+          border-top: 2px solid #111; }
       @media screen and (min-width: 1024px) {
         #projects-container #project-gallery .p-thumbnail {
           max-width: 48%;
@@ -447,7 +451,8 @@ main {
         width: 100%;
         max-width: 100%;
         margin-bottom: 1em;
-        border: 2px solid #111; }
+        border: 2px solid #111;
+        box-shadow: 3px 3px 3px #222; }
         @media screen and (min-width: 1024px) {
           #projects-container #individual-projects .project-meta img {
             max-width: 900px; } }
