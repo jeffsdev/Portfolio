@@ -328,54 +328,6 @@ main {
     .work-section {
       padding: 0; } }
 
-.portfolio-item {
-  width: 100%;
-  background: black;
-  background-color: #000000;
-  background-image: url("../img/shattered.png");
-  margin: auto;
-  margin-bottom: 25px;
-  max-width: 1400px;
-  font-size: 14px; }
-  .portfolio-item .p-img {
-    width: 100%;
-    background: #444;
-    border-bottom: 1px solid #111; }
-    @media screen and (min-width: 400px) and (orientation: landscape) {
-      .portfolio-item .p-img {
-        width: 50%;
-        height: auto;
-        border: 1px solid #111; } }
-    @media screen and (min-width: 1024px) {
-      .portfolio-item .p-img {
-        width: 50%;
-        height: auto;
-        border: none;
-        border-right: 1px solid #111; } }
-  .portfolio-item .portfolio-item-details {
-    margin-top: 5px;
-    width: 100%;
-    height: 100%;
-    padding: 1em; }
-    .portfolio-item .portfolio-item-details p {
-      margin: 1em; }
-    .portfolio-item .portfolio-item-details img {
-      height: 25px; }
-  @media screen and (min-width: 400px) and (orientation: landscape) {
-    .portfolio-item {
-      display: flex;
-      align-items: center;
-      border-right: 2px solid #abf; } }
-  @media screen and (min-width: 1024px) {
-    .portfolio-item {
-      display: flex;
-      align-items: center;
-      font-size: 1em;
-      border-right: 2px solid #abf; } }
-
-.scroll-fadein {
-  opacity: 0; }
-
 #projects-container {
   display: flex;
   background-color: #000000;
@@ -398,7 +350,8 @@ main {
       padding: 20px 0;
       background: #333;
       background: rgba(0, 0, 0, 0.5);
-      border-left: 2px solid #abf; }
+      border-left: 2px solid #abf;
+      transition: 0.3s; }
       #projects-container .projects-list li:first-child {
         margin-bottom: 15%;
         border-left: none;
@@ -473,66 +426,66 @@ main {
   #projects-container #individual-projects {
     display: none;
     padding: 50px 0; }
-    #projects-container #individual-projects .projects .project-details {
+    #projects-container #individual-projects .project-details {
       display: flex;
       flex-direction: column;
       font-size: 14px; }
-      #projects-container #individual-projects .projects .project-details .project-meta {
-        flex: 2; }
-        #projects-container #individual-projects .projects .project-details .project-meta img {
-          display: block;
-          margin: auto;
-          width: 100%;
-          max-width: 100%;
-          margin-bottom: 1em;
-          border: 2px solid #111; }
-          @media screen and (min-width: 1024px) {
-            #projects-container #individual-projects .projects .project-details .project-meta img {
-              max-width: 900px; } }
-        #projects-container #individual-projects .projects .project-details .project-meta p {
-          max-width: 100%;
-          margin: auto;
-          margin-bottom: 1em; }
-        #projects-container #individual-projects .projects .project-details .project-meta h3 {
-          font-size: 1.5em;
-          margin: 10px 0;
-          display: inline-block;
-          vertical-align: middle;
-          width: 100%; }
-          @media screen and (min-width: 590px) {
-            #projects-container #individual-projects .projects .project-details .project-meta h3 {
-              font-size: 2.25em; } }
-        #projects-container #individual-projects .projects .project-details .project-meta a {
-          margin-top: 1em;
-          margin-bottom: 25px; }
-      #projects-container #individual-projects .projects .project-details aside {
-        flex: 1;
-        margin-top: 25px;
-        width: 100%; }
-        #projects-container #individual-projects .projects .project-details aside h4 {
-          font-size: 1.125em;
-          margin-bottom: 10px; }
-        #projects-container #individual-projects .projects .project-details aside img {
-          max-width: 20%;
-          margin: 10px 0; }
-        #projects-container #individual-projects .projects .project-details aside .techused-list {
-          width: 25%;
-          display: inline; }
-        #projects-container #individual-projects .projects .project-details aside .techused-list li {
-          margin-bottom: 1em; }
-        #projects-container #individual-projects .projects .project-details aside a {
-          display: inline-block; }
-        @media screen and (min-width: 1024px) {
-          #projects-container #individual-projects .projects .project-details aside {
-            max-width: 300px;
-            margin-top: 0;
-            font-size: 1em; } }
       @media screen and (min-width: 590px) {
-        #projects-container #individual-projects .projects .project-details {
+        #projects-container #individual-projects .project-details {
           font-size: 1em; } }
       @media screen and (min-width: 1024px) {
-        #projects-container #individual-projects .projects .project-details {
+        #projects-container #individual-projects .project-details {
           flex-direction: row;
+          font-size: 1em; } }
+    #projects-container #individual-projects .project-meta {
+      flex: 2; }
+      #projects-container #individual-projects .project-meta img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1em;
+        border: 2px solid #111; }
+        @media screen and (min-width: 1024px) {
+          #projects-container #individual-projects .project-meta img {
+            max-width: 900px; } }
+      #projects-container #individual-projects .project-meta p {
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 1em; }
+      #projects-container #individual-projects .project-meta h3 {
+        font-size: 1.5em;
+        margin: 10px 0;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%; }
+        @media screen and (min-width: 590px) {
+          #projects-container #individual-projects .project-meta h3 {
+            font-size: 2.25em; } }
+      #projects-container #individual-projects .project-meta a {
+        margin-top: 1em;
+        margin-bottom: 25px; }
+    #projects-container #individual-projects aside {
+      flex: 1;
+      margin-top: 25px;
+      width: 100%; }
+      #projects-container #individual-projects aside h4 {
+        font-size: 1.125em;
+        margin-bottom: 10px; }
+      #projects-container #individual-projects aside img {
+        max-width: 15%;
+        margin: 10px 0; }
+      #projects-container #individual-projects aside .techused-list {
+        width: 25%;
+        display: inline; }
+      #projects-container #individual-projects aside .techused-list li {
+        margin-bottom: 1em; }
+      #projects-container #individual-projects aside a {
+        display: inline-block; }
+      @media screen and (min-width: 1024px) {
+        #projects-container #individual-projects aside {
+          max-width: 300px;
+          margin-top: 0;
           font-size: 1em; } }
 
 .about-section {

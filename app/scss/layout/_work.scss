@@ -42,89 +42,10 @@
 }
 
 
-.portfolio-item {
-  width: 100%;
-  background: darken($gray, 50%);
-  background-color: #000000;
-  background-image: url("../img/shattered.png");
-  margin: auto;
-  margin-bottom: 25px;
-  max-width: 1400px;
-  font-size: 14px;
-  .p-img {
-    width: 100%;
-    background: $gray;
-    border-bottom: 1px solid $black;
-    @media screen and #{$s-phone} and (orientation: landscape) {
-      width: 50%;
-      height: auto;
-      border: 1px solid $black;
-    }
-    @media screen and #{$desktop} {
-      width: 50%;
-      height: auto;
-      border: none;
-      border-right: 1px solid $black;
-    }
-  }
-
-  .portfolio-item-details {
-    margin-top: 5px;
-    width: 100%;
-    height: 100%;
-    padding: 1em;
-    p {
-      margin: 1em;
-    }
-    img {
-      height: 25px;
-    }
-  }
-  @media screen and #{$s-phone} and (orientation: landscape) {
-    display: flex;
-    align-items: center;
-    border-right: 2px solid $lightBlue;
-  }
-  @media screen and #{$desktop} {
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-    border-right: 2px solid $lightBlue;
-  }
-}
-
-
-
-.scroll-fadein {
-  opacity: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #projects-container {
   display: flex;
-  // border: 1px solid red;
   background-color: #000000;
   background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
   background-attachment: fixed;
@@ -134,13 +55,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // border: 2px solid green;
     max-width: 300px;
     min-width: 100px;
     flex: 1;
     padding: 50px 2%;
     padding-right: 2%;
-        background: rgba(100, 100, 100, 0.1);
+    background: rgba(100, 100, 100, 0.1);
+
     li {
       width: 100%;
       margin-bottom: 5%;
@@ -148,6 +69,7 @@
       background: #333;
       background: rgba(0, 0, 0, 0.5);
       border-left: 2px solid $lightBlue;
+      transition: 0.3s;
       &:first-child {
         margin-bottom: 15%;
         border-left: none;
@@ -164,8 +86,6 @@
   }
 
   .projects-area {
-    // background: #432;
-    // border: 2px solid purple;
     flex: 2;
     padding: 0 2%;
   }
@@ -245,195 +165,81 @@
   #individual-projects {
     display: none;
     padding: 50px 0;
-    .projects {
 
-      .project-details {
-        // border: 2px solid orange;
-        display: flex;
-        flex-direction: column;
-            font-size: 14px;
-        .project-meta {
-          flex: 2;
-          img {
-            display: block;
-            margin: auto;
-            width: 100%;
-            max-width: 100%;
-            margin-bottom: 1em;
-            border: 2px solid $black;
-            @media screen and #{$desktop} {
-              max-width: 900px;
-            }
-          }
-          p {
-            max-width: 100%;
-            margin: auto;
-            margin-bottom: 1em;
-
-          }
-          h3 {
-            font-size: 1.5em;
-            margin: 10px 0;
-            display: inline-block;
-            vertical-align: middle;
-            width: 100%;
-            @media screen and #{$s-tablet} {
-              font-size: 2.25em;
-            }
-          }
-          a {
-            margin-top: 1em;
-            margin-bottom: 25px;
-
-          }
-
-        }
-
-        aside {
-
-          flex: 1;
-          // max-width: 300px;
-          margin-top: 25px;
-          width: 100%;
-            h4 {
-              font-size: 1.125em;
-              margin-bottom: 10px;
-
-            }
-            img {
-              max-width: 20%;
-              margin: 10px 0;
-
-            }
-          .techused-list {
-            width: 25%;
-            display: inline;
-          }
-          .techused-list li {
-            margin-bottom: 1em;
-          }
-          a {
-            display: inline-block;
-          }
-          @media screen and #{$desktop} {
-            max-width: 300px;
-            margin-top: 0;
-            font-size: 1em;
-          }
-        }
-        @media screen and #{$s-tablet} {
-          font-size: 1em;
-        }
+    .project-details {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      @media screen and #{$s-tablet} {
+        font-size: 1em;
+      }
+      @media screen and #{$desktop} {
+        flex-direction: row;
+        font-size: 1em;
+      }
+    }
+    .project-meta {
+      flex: 2;
+      img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1em;
+        border: 2px solid $black;
         @media screen and #{$desktop} {
-          flex-direction: row;
-          font-size: 1em;
+          max-width: 900px;
         }
+      }
+      p {
+        max-width: 100%;
+        margin: auto;
+        margin-bottom: 1em;
+
+      }
+      h3 {
+        font-size: 1.5em;
+        margin: 10px 0;
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        @media screen and #{$s-tablet} {
+          font-size: 2.25em;
+        }
+      }
+      a {
+        margin-top: 1em;
+        margin-bottom: 25px;
+      }
+    }
+
+    aside {
+      flex: 1;
+      margin-top: 25px;
+      width: 100%;
+      h4 {
+        font-size: 1.125em;
+        margin-bottom: 10px;
+      }
+      img {
+        max-width: 15%;
+        margin: 10px 0;
+      }
+      .techused-list {
+        width: 25%;
+        display: inline;
+      }
+      .techused-list li {
+        margin-bottom: 1em;
+      }
+      a {
+        display: inline-block;
+      }
+      @media screen and #{$desktop} {
+        max-width: 300px;
+        margin-top: 0;
+        font-size: 1em;
       }
     }
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// working backup for full size
-
-//
-// #projects-container {
-//   display: flex;
-//   border: 1px solid red;
-//   background-color: #000000;
-//   background-image: url("https://www.transparenttextures.com/patterns/shattered-dark.png");
-//   background-attachment: fixed;
-//   min-height: 1000px;
-//
-//   .projects-list {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     background: rgba(0, 0, 0, 0.5);
-//     border: 2px solid green;
-//     max-width: 300px;
-//     flex: 1;
-//     padding: 50px 0;
-//     li {
-//       width: 75%;
-//       margin-bottom: 2%;
-//       padding: 20px 0;
-//       background: #333;
-//     }
-//   }
-//
-//   .projects-area {
-//     // background: #432;
-//     border: 2px solid purple;
-//     flex: 2;
-//   }
-//
-//   #project-gallery {
-//     justify-content: center;
-//     display: flex;
-//     padding: 50px 0;
-//     flex-wrap: wrap;
-//     img {
-//       align-self: center;
-//       max-width: 30%;
-//       margin:  0 1% 1% 1%;
-//       height: auto;
-//       display: block;
-//     }
-//   }
-//
-//   #individual-projects {
-//     display: none;
-//     padding: 50px 0;
-//     .projects {
-//
-//       .project-details {
-//         border: 2px solid orange;
-//         display: flex;
-//         .project-meta {
-//           flex: 2;
-//           img {
-//             max-width: 75%;
-//             border: 2px solid $black;
-//           }
-//           p {
-//             max-width: 75%;
-//             margin: auto;
-//           }
-//           h3 {
-//             font-size: 2.25em;
-//             margin: 1em;
-//           }
-//
-//         }
-//
-//         aside {
-//           border: 2px solid lime;
-//           flex: 1;
-//           max-width: 300px;
-//           img {
-//             max-width: 25%;
-//             margin: 1em 0;
-//           }
-//           .techused-list li {
-//             margin-bottom: 1em;
-//           }
-//         }
-//       }
-//     }
-//   }
-//
-// }
