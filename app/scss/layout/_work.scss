@@ -146,10 +146,14 @@
       margin-bottom: 5%;
       padding: 20px 0;
       background: #333;
-    background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.5);
       border-left: 2px solid $lightBlue;
       &.active {
         border-color: $lightGreen;
+      }
+      &:hover {
+        cursor: pointer;
+        background: lighten($black, 5%);
       }
     }
   }
@@ -170,24 +174,58 @@
     .p-thumbnail {
       position: relative;
       margin:  0 0% 5% 0%;
-      span {
-        background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 40%);
-        position: absolute;
-        bottom: 0;
-        display: block;
+      overflow: hidden;
+      .project-brief {
+        overflow: hidden;
         width: 100%;
-        padding: 10% 0 3% 0;
-        font-size: 14px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateY(100%);
+        border-left: 2px solid $black;
+        border-right: 2px solid $black;
+        transition: 0.5s;
+        background: rgba(200, 200, 200, 0);
+        color: $black;
+        span {
+          display: block;
+          width: 100%;
+          font-size: 1.5em;
+          margin-top: 10%;
+          transition: 0.5s;
+          color: $black;
+        }
+        p {
+          width: 75%;
+          font-size: 1em;
+          margin: 15px auto;
+          &:first-of-type {
+            display: none;
+            @media screen and #{$s-tablet} {
+              display: block;
+            }
+          }
+          &:last-child {
+            font-weight: 700;
+          }
+        }
+      }
+      &:hover {
+        cursor: pointer;
+        .project-brief {
+        background: rgba(200, 200, 200, 0.9);
+          transition: 0.5s;
+        transform: translateY(0%);
+        }
       }
       @media screen and #{$desktop} {
 
         max-width: 48%;
-        &:nth-child(odd) {
-          margin-right: 1%;
-        }
-        &:nth-child(even) {
-          margin-left: 1%;
-        }
+        margin:  0 1% 5% 1%;
+      }
+      @media screen and #{$l-desktop} {
+        max-width: 31%;
+        margin:  0 1% 2% 1%;
       }
     }
     img {

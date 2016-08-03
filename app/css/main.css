@@ -400,6 +400,9 @@ main {
       border-left: 2px solid #abf; }
       #projects-container .projects-list li.active {
         border-color: #00ff78; }
+      #projects-container .projects-list li:hover {
+        cursor: pointer;
+        background: #1e1e1e; }
   #projects-container .projects-area {
     flex: 2;
     padding: 0 2%; }
@@ -410,22 +413,52 @@ main {
     flex-wrap: wrap; }
     #projects-container #project-gallery .p-thumbnail {
       position: relative;
-      margin: 0 0% 5% 0%; }
-      #projects-container #project-gallery .p-thumbnail span {
-        background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 40%);
-        position: absolute;
-        bottom: 0;
-        display: block;
+      margin: 0 0% 5% 0%;
+      overflow: hidden; }
+      #projects-container #project-gallery .p-thumbnail .project-brief {
+        overflow: hidden;
         width: 100%;
-        padding: 10% 0 3% 0;
-        font-size: 14px; }
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateY(100%);
+        border-left: 2px solid #111;
+        border-right: 2px solid #111;
+        transition: 0.5s;
+        background: rgba(200, 200, 200, 0);
+        color: #111; }
+        #projects-container #project-gallery .p-thumbnail .project-brief span {
+          display: block;
+          width: 100%;
+          font-size: 1.5em;
+          margin-top: 10%;
+          transition: 0.5s;
+          color: #111; }
+        #projects-container #project-gallery .p-thumbnail .project-brief p {
+          width: 75%;
+          font-size: 1em;
+          margin: 15px auto; }
+          #projects-container #project-gallery .p-thumbnail .project-brief p:first-of-type {
+            display: none; }
+            @media screen and (min-width: 590px) {
+              #projects-container #project-gallery .p-thumbnail .project-brief p:first-of-type {
+                display: block; } }
+          #projects-container #project-gallery .p-thumbnail .project-brief p:last-child {
+            font-weight: 700; }
+      #projects-container #project-gallery .p-thumbnail:hover {
+        cursor: pointer; }
+        #projects-container #project-gallery .p-thumbnail:hover .project-brief {
+          background: rgba(200, 200, 200, 0.9);
+          transition: 0.5s;
+          transform: translateY(0%); }
       @media screen and (min-width: 1024px) {
         #projects-container #project-gallery .p-thumbnail {
-          max-width: 48%; }
-          #projects-container #project-gallery .p-thumbnail:nth-child(odd) {
-            margin-right: 1%; }
-          #projects-container #project-gallery .p-thumbnail:nth-child(even) {
-            margin-left: 1%; } }
+          max-width: 48%;
+          margin: 0 1% 5% 1%; } }
+      @media screen and (min-width: 1400px) {
+        #projects-container #project-gallery .p-thumbnail {
+          max-width: 31%;
+          margin: 0 1% 2% 1%; } }
     #projects-container #project-gallery img {
       align-self: center;
       max-width: 100%;

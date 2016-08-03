@@ -122,12 +122,12 @@ $( document ).ready(function() {
       $('#individual-projects').fadeIn(300);
 
        var dig1 = $(this).attr("id").slice(4,6);
-   console.log(dig1);
+  //  console.log(dig1);
 
       $('.projects').each(function(){
 
         var dig2 = $(this).attr("id").slice(7,9);
-   console.log(dig2);
+  //  console.log(dig2);
 
         $(this).hide().promise().done(function(){
           if (dig1 === dig2) {
@@ -144,7 +144,28 @@ $( document ).ready(function() {
 
 
 
+    $('.p-thumbnail').click(function() {
+      $('#project-gallery').hide();
+      $('#individual-projects').fadeIn(300);
 
+
+      var dig3 = $(this).attr('id').slice(9,11);
+        // console.log(dig3 + " dig3")
+
+      var tab_id = "#item" + dig3;
+      $(".project-tab").removeClass("active");
+      $(tab_id).addClass("active");
+
+      $('.projects').each(function() {
+        var dig2 = $(this).attr("id").slice(7,9);
+          // console.log(dig2 + " dig2")
+          $(this).hide().promise().done(function(){
+            if (dig2 === dig3) {
+              $(this).fadeIn(300);
+            }
+        });
+      });
+    });
 
 
 
