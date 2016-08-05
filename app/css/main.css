@@ -342,13 +342,14 @@ main {
     align-items: center;
     max-width: 300px;
     min-width: 100px;
+    min-height: 500px;
     flex: 1;
     padding: 50px 2%;
     padding-right: 2%;
     background: rgba(100, 100, 100, 0.1); }
     #projects-container .projects-list li {
       width: 100%;
-      margin-bottom: 5%;
+      margin-bottom: 10px;
       padding: 20px 0;
       background: #333;
       background: rgba(0, 0, 0, 0.5);
@@ -356,7 +357,7 @@ main {
       transition: 0.3s;
       box-shadow: 3px 3px 3px #222; }
       #projects-container .projects-list li:first-child {
-        margin-bottom: 15%;
+        margin-bottom: 50px;
         border-left: none;
         border-bottom: 2px solid #abf; }
       #projects-container .projects-list li.active {
@@ -364,6 +365,9 @@ main {
       #projects-container .projects-list li:hover {
         cursor: pointer;
         background: #1e1e1e; }
+      @media screen and (min-width: 768px) {
+        #projects-container .projects-list li {
+          margin-bottom: 20px; } }
   #projects-container .projects-area {
     flex: 2;
     padding: 0 2%; }
@@ -374,7 +378,7 @@ main {
     flex-wrap: wrap; }
     #projects-container #project-gallery .p-thumbnail {
       position: relative;
-      margin: 0 0% 5% 0%;
+      margin: 0 0% 20px 0%;
       overflow: hidden;
       box-shadow: 3px 3px 3px #222; }
       #projects-container #project-gallery .p-thumbnail .project-brief {
@@ -418,11 +422,11 @@ main {
       @media screen and (min-width: 1024px) {
         #projects-container #project-gallery .p-thumbnail {
           max-width: 48%;
-          margin: 0 1% 5% 1%; } }
+          margin: 0 1% 20px 1%; } }
       @media screen and (min-width: 1400px) {
         #projects-container #project-gallery .p-thumbnail {
           max-width: 31%;
-          margin: 0 1% 2% 1%; } }
+          margin: 0 10px 20px 10px; } }
     #projects-container #project-gallery img {
       align-self: center;
       max-width: 100%;
@@ -510,8 +514,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
-    flex: 0 0 100%; }
+    height: 150px; }
   .about-section .about-top {
     margin-left: auto; }
     .about-section .about-top .about-me {

@@ -50,13 +50,13 @@
   background-image: url("../img/shattered-dark.png");
   background-attachment: fixed;
   min-height: 500px;
-
   .projects-list {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 300px;
     min-width: 100px;
+    min-height: 500px;
     flex: 1;
     padding: 50px 2%;
     padding-right: 2%;
@@ -64,7 +64,7 @@
 
     li {
       width: 100%;
-      margin-bottom: 5%;
+      margin-bottom: 10px;
       padding: 20px 0;
       background: #333;
       background: rgba(0, 0, 0, 0.5);
@@ -72,7 +72,7 @@
       transition: 0.3s;
       box-shadow: 3px 3px 3px #222;
       &:first-child {
-        margin-bottom: 15%;
+        margin-bottom: 50px;
         border-left: none;
         border-bottom: 2px solid $lightBlue;
       }
@@ -82,6 +82,9 @@
       &:hover {
         cursor: pointer;
         background: lighten($black, 5%);
+      }
+      @media screen and #{$tablet} {
+        margin-bottom: 20px;
       }
     }
   }
@@ -96,10 +99,9 @@
     display: flex;
     padding: 50px 0;
     flex-wrap: wrap;
-
     .p-thumbnail {
       position: relative;
-      margin:  0 0% 5% 0%;
+      margin:  0 0% 20px 0%;
       overflow: hidden;
       box-shadow: 3px 3px 3px #222;
       .project-brief {
@@ -150,11 +152,11 @@
       @media screen and #{$desktop} {
 
         max-width: 48%;
-        margin:  0 1% 5% 1%;
+        margin:  0 1% 20px 1%;
       }
       @media screen and #{$l-desktop} {
         max-width: 31%;
-        margin:  0 1% 2% 1%;
+        margin:  0 10px 20px 10px;
       }
     }
     img {
