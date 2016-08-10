@@ -447,6 +447,15 @@ main {
         #projects-container #individual-projects .project-details {
           flex-direction: row;
           font-size: 1em; } }
+      #projects-container #individual-projects .project-details .p-img-other {
+        max-width: 85%;
+        display: inline-block;
+        vertical-align: top;
+        margin: 15px 0; }
+        @media screen and (min-width: 1400px) {
+          #projects-container #individual-projects .project-details .p-img-other {
+            max-width: 40%;
+            margin: 25px; } }
     #projects-container #individual-projects .project-meta {
       flex: 2; }
       #projects-container #individual-projects .project-meta img {
