@@ -1,9 +1,10 @@
+
 .contact {
   color: $white;
   text-align: center;
   height: calc(100vh - 50px);
-  background-color: #000;
-  background-image: url("../img/dark-pavement3.jpg");
+  background-color: #333;
+  // background-image: url("../img/dark-pavement3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -98,3 +99,131 @@ footer {
     font-size: 0.8rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//
+//
+// .contact {
+//   color: $white;
+//   text-align: center;
+//   height: calc(100vh - 50px);
+//   background-color: #000;
+//   background-image: url("../img/dark-pavement3.jpg");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   background-position: left;
+//   min-height: 320px;
+//   @media screen and (orientation: portrait) {
+//     min-height: calc(100vh - 50px);
+//   }
+//   @media screen and #{$desktop} {
+//     height: calc(100vh -50px);
+//   }
+//   .contact-head {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background: $black;
+//     height: 20%;
+//     max-height: 150px;
+//     flex: 0 0 100%;
+//     margin-bottom: 3%;
+//   }
+//
+//   .contact-box {
+//     padding: 25px 0;
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     justify-content: center;
+//     max-width: 768px;
+//     margin: auto;
+//     @media screen and (orientation: landscape) {
+//       flex-direction: row;
+//     }
+//     @media screen and #{$l-desktop} {
+//       max-width: 50%;
+//     }
+//     .contact-message {
+//       margin-bottom: 25px;
+//       color: $lightBlue;
+//       padding: 0 25px;
+//       h3 {
+//         line-height: 1.25em;
+//         @media screen and #{$tablet} and #{$xs-mobile}{
+//           font-size: 2em;
+//         }
+//         @media screen and #{$desktop} {
+//           max-width: 100%;
+//         }
+//       }
+//     }
+//     .contact-details {
+//       flex: 1 1 100%;
+//       p {
+//         flex: 1 1 100%;
+//         margin-bottom: 1em;
+//         font-size: 1.125em;
+//         &:first-child {
+//           font-weight: 500;
+//           margin: auto;
+//           margin-bottom: 25px;
+//         }
+//         @media screen and #{$tablet} and #{$xs-mobile}{
+//           font-size: 2em;
+//         }
+//       }
+//       .social-icons {
+//         margin: 0 auto;
+//         a {
+//           display: inline-block;
+//           margin: 0 15px;
+//           padding: 5px;
+//         }
+//         img {
+//           width: 40px;
+//         }
+//       }
+//     }
+//   }
+// }
+//
+//
+//
+// footer {
+//
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 50px;
+//   margin-top: -50px;
+//   p {
+//     color: $lightGray;
+//     font-size: 0.8rem;
+//   }
+// }
