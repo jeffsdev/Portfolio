@@ -184,4 +184,34 @@ $( document ).ready(function() {
   });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Parallax stuff for social/events section
+	var docum = $(document);
+	var parallaxElem = $(".parallax-bg");
+
+
+
+	docum.on('scroll', function() {
+		var currentPos = docum.scrollTop();
+		parallaxElem.css("background-position", '0 ' + (-currentPos/4) +'px');
+	});
+
+
+
+
+
+
+
 });
